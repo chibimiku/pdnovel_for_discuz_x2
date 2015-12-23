@@ -19,13 +19,15 @@ loadcache( "pdnovelcategory" );
 $ncc = $_G['cache']['pdnovelcategory'];
 $do = $_G['gp_do'] ? $_G['gp_do'] : "mark";
 $ac = $_G['gp_ac'];
-$page = $_G['gp_page'] ? $_G['gp_page'] : 1;
+$page = $_G['gp_page'] ? intval( $_G['gp_page'] ) : 1;
 $perpage = 20;
 $limit_start = $perpage * ( $page - 1 );
 $navtitle = "小说中心 - ".$navtitle;
 $coverpath = DISCUZ_ROOT.'./data/attachment/pdnovel/cover/';
 $chapterpath = DISCUZ_ROOT.'./data/attachment/pdnovel/chapter/';
 $imgpath = DISCUZ_ROOT.'./data/attachment/pdnovel/img/';
+$tableid = $_G['config']['novelid'];
+
 if ( $do == "mark" )
 {
 		if ( $ac == "bdel" )
@@ -80,6 +82,13 @@ else if ( $do == "manage" )
 		}
 		else
 		{
+				if ( !checkperm( "pdnovelmanage" ) && $_G['uid'] != $comment['uid'] )
+				{
+						showmessage( "group_nopermission", NULL, array(
+								"grouptitle" => $_G['group']['grouptitle']
+						), array( "login" => 1 ) );
+				}
+				
 				$novel = DB::fetch_first( "SELECT * FROM ".DB::table( "pdnovel_view" ).( " WHERE novelid=".$novelid ) );
 				if ( !$novel )
 				{
@@ -87,12 +96,12 @@ else if ( $do == "manage" )
 				}
 				$volumechapter = "";
 				$volumenum = 0;
-				$vquery = DB::query( "SELECT * FROM ".DB::table( "pdnovel_volume" ).( " WHERE novelid=".$novelid." ORDER BY volumeid ASC" ) );
+				$vquery = DB::query( "SELECT * FROM ".DB::table( "pdnovel_volume" ).( " WHERE novelid=".$novelid." ORDER BY volumeorder ASC,volumeid ASC" ) );
 				while ( $volume = DB::fetch( $vquery ) )
 				{
 						++$volumenum;
 						$volumechapter .= "<div class=\"contenttitle\" id=\"volumeid".$volume[volumeid]."\"><h2 class=\"left\"><span>".$volumenum."</span>《".$novel[name]."》".$volume[volumename]."</h2><h3 class=\"right\"><a href=\"pdnovel.php?mod=home&do=volume&ac=edit&novelid=".$novelid."&volumeid=".$volume[volumeid]."\">编辑</a> <a href=\"pdnovel.php?mod=home&do=volume&ac=del&novelid=".$novelid."&volumeid=".$volume[volumeid]."\">删除</a></h3></div><div class=\"contentlist\"><ul>";
-						$cquery = DB::query( "SELECT * FROM ".DB::table( "pdnovel_chapter" ).( " WHERE novelid=".$novelid.( " AND volumeid=".$volume['volumeid']." ORDER BY chapterid ASC" ) ) );
+						$cquery = DB::query( "SELECT * FROM ".DB::table( "pdnovel_chapter" ).( " WHERE novelid=".$novelid.( " AND volumeid=".$volume['volumeid']." ORDER BY chapterorder ASC,chapterid ASC" ) ) );
 						while ( $chapter = DB::fetch( $cquery ) )
 						{
 								$chapter['chaptername'] = cutstr( $chapter['chaptername'], 20, "" );
@@ -118,7 +127,7 @@ else if ( $do == "comment" )
 				}
 				foreach ( $_G['gp_cidarr'] as $cid )
 				{
-						DB::query( "DELETE FROM ".DB::table( "pdnovel_comment" ).( " WHERE cid='".$cid."'" ) );
+						DB::query( "DELETE FROM ".DB::table( "pdnovel_comment" ).( " WHERE cid='".intval( $cid )."'" ) );
 				}
 				showmessage( "do_success", dreferer( ) );
 		}
@@ -209,89 +218,73 @@ else if ( $do == "topic" )
 		loadcache( "diytemplatename" );
 		include( template( "diy:pdnovel/home_topic" ) );
 }
-else if ( $do == "novel" )
-{
-		if ( $ac == "add" )
-		{
-				if ( !checkperm( "pdnovelpost" ) )
-				{
-						showmessage( "group_nopermission", NULL, array(
+else if($do == "novel" ){
+		if($ac == 'add'){
+			if(!checkperm("pdnovelpost")){
+				showmessage( "group_nopermission", NULL, array(
 								"grouptitle" => $_G['group']['grouptitle']
 						), array( "login" => 1 ) );
-				}
-				if ( !submitcheck( "postsubmit" ) )
-				{
-						$i = 0;
-						$query1 = DB::query( "SELECT catid,upid,catname FROM ".DB::table( "pdnovel_category" )." WHERE upid=0 ORDER BY displayorder ASC" );
-						while ( $upcat = DB::fetch( $query1 ) )
-						{
-								$selectupcat .= "<option value=\"".$upcat['catid']."\" >&nbsp;".$upcat['catname']."</option>";
-								$query2 = DB::query( "SELECT catid,upid,catname FROM ".DB::table( "pdnovel_category" ).( " WHERE upid=".$upcat['catid']." ORDER BY displayorder ASC" ) );
-								while ( $cat = DB::fetch( $query2 ) )
-								{
-										$selectcat .= "cat[".$i."] = new Array('".$cat['upid']."','".$cat['catid']."','".$cat['catname']."');";
-										++$i;
-								}
+			}
+			if(!submitcheck( "postsubmit")){
+				$i = 0;
+				$query1 = DB::query( "SELECT catid,upid,catname FROM ".DB::table( "pdnovel_category" )." WHERE upid=0 ORDER BY displayorder ASC" );
+				while($upcat = DB::fetch($query1)){
+					$selectupcat .= "<option value=\"".$upcat['catid']."\" >&nbsp;".$upcat['catname']."</option>";
+					$query2 = DB::query( "SELECT catid,upid,catname FROM ".DB::table('pdnovel_category').( " WHERE upid=".$upcat['catid']." ORDER BY displayorder ASC" ) );
+					while($cat = DB::fetch($query2)){
+						$selectcat .= "cat[".$i."] = new Array('".$cat['upid']."','".$cat['catid']."','".$cat['catname']."');";
+						++$i;
 						}
 				}
-				else
-				{
-						if ( $_G['gp_type'] )
-						{
-								$author = addslashes( $_G['gp_author'] );
-								$authorid = DB::result_first( "SELECT authorid FROM ".DB::table( "pdnovel_author" ).( " WHERE author='".$author."';" ) );
-								if ( !$authorid )
-								{
-										DB::insert( "pdnovel_author", array(
-												"author" => $author
-										) );
-										$authorid = DB::insert_id( );
-								}
-						}
-						else
-						{
-								$author = $_G['username'];
-								$authorid = $_G['uid'];
-						}
-						$novel = DB::result_first( "SELECT novelid FROM ".DB::table( "pdnovel_view" ).( " WHERE name='" .addslashes( $_G['gp_name'] ). "' AND author='". $author ."';" ) );
-						if ( $novel['novelid'] )
-						{
-								showmessage( $lang['post_innovel']);
-						}
-						$novel_data = array(
-								"catid" => $_G['gp_catid'],
-								"name" => addslashes( $_G['gp_name'] ),
-								"initial" => get_initial( $_G['gp_name'] ),
-								"postdate" => $_G['timestamp'],
-								"lastupdate" => $_G['timestamp'],
-								"keyword" => addslashes( $_G['gp_keyword'] ),
-								"author" => $author,
-								"authorid" => $authorid,
-								"poster" => $_G['username'],
-								"posterid" => $_G['uid'],
-								"admin" => $_G['username'],
-								"adminid" => $_G['uid'],
-								"cover" => $_G['gp_cover'],
-								"full" => $_G['gp_full'],
-								"permission" => $_G['gp_permission'],
-								"first" => $_G['gp_first'],
-								"notice" => $_G['gp_notice'],
-								"vip" => $_G['gp_vip'],
-								"intro" => addslashes( $_G['gp_intro'] ),
-								"type" => $_G['gp_type']
-						);
-						DB::insert( "pdnovel_view", $novel_data );
-						$novelid = DB::insert_id( );
-						$subnovelid = floor( $novelid / 1000 );
-						dmkdir( $coverpath.$subnovelid );
-						if ( $_G['gp_cover'] )
-						{
-								$_G['gp_oldcover'] = $subnovelid."/".$novelid."-".rand( 100, 999 ).".jpg";
-								@rename( $_G['gp_cover'], $coverpath.$_G['gp_oldcover'] );
-								DB::update( "pdnovel_view", array(
-										"cover" => $_G['gp_oldcover']
-								), "novelid=".$novelid );
-						}
+			}else{
+				if($_G['gp_type']){
+					$author = addslashes( $_G['gp_author'] );
+					$authorid = DB::result_first( "SELECT authorid FROM ".DB::table( "pdnovel_author" ).( " WHERE author='".$author."';" ) );
+					if ( !$authorid ){
+						DB::insert( "pdnovel_author", array("author" => $author));
+						$authorid = DB::insert_id( );
+					}
+				}else{
+					$author = $_G['username'];
+					$authorid = $_G['uid'];
+				}
+				$novel = DB::result_first( "SELECT novelid FROM ".DB::table( "pdnovel_view" ).( " WHERE name='" .addslashes( $_G['gp_name'] ). "' AND author='". $author ."';" ) );
+				if ( $novel['novelid'] ){
+					showmessage( $lang['post_innovel']);
+				}
+				$novel_data = array(
+						"catid" => $_G['gp_catid'],
+						"name" => addslashes( $_G['gp_name'] ),
+						"initial" => get_initial( $_G['gp_name'] ),
+						"postdate" => $_G['timestamp'],
+						"lastupdate" => $_G['timestamp'],
+						"keyword" => addslashes( $_G['gp_keyword'] ),
+						"author" => $author,
+						"authorid" => $authorid,
+						"poster" => $_G['username'],
+						"posterid" => $_G['uid'],
+						"admin" => $_G['username'],
+						"adminid" => $_G['uid'],
+						"cover" => addslashes( $_G['gp_cover'] ),
+						"full" => intval( $_G['gp_full'] ),
+						"permission" => intval( $_G['gp_permission'] ),
+						"first" => intval( $_G['gp_first'] ),
+						"notice" => addslashes( $_G['gp_notice'] ),
+						"vip" => intval( $_G['gp_vip'] ),
+						"intro" => addslashes( $_G['gp_intro'] ),
+						"type" => intval( $_G['gp_type'] )
+				);
+				DB::insert( "pdnovel_view", $novel_data );
+				$novelid = DB::insert_id( );
+				$subnovelid = floor( $novelid / 1000 );
+				dmkdir( $coverpath.$subnovelid );
+				if ( $_G['gp_cover'] && !$_G['config']['tsdm']['novelcoverurl']){
+						$_G['gp_oldcover'] = $subnovelid."/".$novelid."-".rand( 100, 999 ).".jpg";
+						@rename( $_G['gp_cover'], $coverpath.$_G['gp_oldcover'] );
+						DB::update( "pdnovel_view", array(
+								"cover" => addslashes( $_G['gp_oldcover'] )
+						), "novelid=".$novelid );
+				}
 						pdupdatecredit( 'pdnovelpost');
 						showmessage( "do_success", "pdnovel.php?mod=home&do=manage&novelid=".$novelid );
 				}
@@ -344,27 +337,30 @@ else if ( $do == "novel" )
 								$author = $_G['username'];
 								$authorid = $_G['uid'];
 						}
-						if ( $_G['gp_cover'] && $_G['gp_oldcover'] )
-						{
-								if ( $_G['gp_cover'] != $_G['gp_oldcover'] )
-								{
-										@unlink( $coverpath.$_G['gp_oldcover'] );
-										@rename( $_G['gp_cover'], $coverpath.$_G['gp_oldcover'] );
-								}
-								$_G['gp_cover'] = $_G['gp_oldcover'];
+						if(!$_G['config']['novelcoverurl']){
+							if ( $_G['gp_cover'] && $_G['gp_oldcover'] )
+							{
+									if ( $_G['gp_cover'] != $_G['gp_oldcover'] )
+									{
+											@unlink( $coverpath.$_G['gp_oldcover'] );
+											@rename( $_G['gp_cover'], $coverpath.$_G['gp_oldcover'] );
+									}
+									$_G['gp_cover'] = $_G['gp_oldcover'];
+							}
+							else if ( $_G['gp_cover'] && !$_G['gp_oldcover'] )
+							{
+									$subnovelid = floor( $novelid / 1000 );
+									$_G['gp_oldcover'] = $subnovelid."/".$novelid."-".rand( 100, 999 ).".jpg";
+									dmkdir( $coverpath.$subnovelid );
+									@rename( $_G['gp_cover'], $coverpath.$_G['gp_oldcover'] );
+									$_G['gp_cover'] = $_G['gp_oldcover'];
+							}
+							else if ( !$_G['gp_cover'] && $_G['gp_oldcover'] )
+							{
+									@unlink( $coverpath.$_G['gp_oldcover'] );
+							}
 						}
-						else if ( $_G['gp_cover'] && !$_G['gp_oldcover'] )
-						{
-								$subnovelid = floor( $novelid / 1000 );
-								$_G['gp_oldcover'] = $subnovelid."/".$novelid."-".rand( 100, 999 ).".jpg";
-								dmkdir( $coverpath.$subnovelid );
-								@rename( $_G['gp_cover'], $coverpath.$_G['gp_oldcover'] );
-								$_G['gp_cover'] = $_G['gp_oldcover'];
-						}
-						else if ( !$_G['gp_cover'] && $_G['gp_oldcover'] )
-						{
-								@unlink( $coverpath.$_G['gp_oldcover'] );
-						}
+						
 						$updatearr = array(
 								"catid" => $_G['gp_catid'],
 								"name" => addslashes( $_G['gp_name'] ),
@@ -376,14 +372,14 @@ else if ( $do == "novel" )
 								"posterid" => $_G['uid'],
 								"admin" => $_G['username'],
 								"adminid" => $_G['uid'],
-								"cover" => $_G['gp_cover'],
-								"full" => $_G['gp_full'],
-								"permission" => $_G['gp_permission'],
-								"first" => $_G['gp_first'],
-								"notice" => $_G['gp_notice'],
-								"vip" => $_G['gp_vip'],
+								"cover" => addslashes( $_G['gp_cover'] ),
+								"full" => intval( $_G['gp_full'] ),
+								"permission" => intval( $_G['gp_permission'] ),
+								"first" => intval( $_G['gp_first'] ),
+								"notice" => addslashes( $_G['gp_notice'] ),
+								"vip" => intval( $_G['gp_vip'] ),
 								"intro" => addslashes( $_G['gp_intro'] ),
-								"type" => $_G['gp_type']
+								"type" => intval( $_G['gp_type'] )
 						);
 						DB::update( "pdnovel_view", $updatearr, "novelid=".$novelid );
 						showmessage( "do_success", "pdnovel.php?mod=home&do=manage&novelid=".$novelid );
@@ -474,6 +470,12 @@ else if ( $do == "volume" )
 		}
 		if ( $ac == "add" )
 		{
+				if ( !checkperm( "pdnovelpost" ) )
+				{
+						showmessage( "group_nopermission", NULL, array(
+								"grouptitle" => $_G['group']['grouptitle']
+						), array( "login" => 1 ) );
+				}
 				if ( submitcheck( "postsubmit" ) )
 				{
 						$volumename = addslashes( cutstr( $_G['gp_volumename'], 50 ) );
@@ -493,6 +495,12 @@ else if ( $do == "volume" )
 		}
 		else if ( $ac == "edit" )
 		{
+				if ( !checkperm( "pdnovelpost" ) )
+				{
+						showmessage( "group_nopermission", NULL, array(
+								"grouptitle" => $_G['group']['grouptitle']
+						), array( "login" => 1 ) );
+				}
 				$volumeid = $_G['gp_volumeid'];
 				$volume = DB::fetch_first( "SELECT * FROM ".DB::table( "pdnovel_volume" ).( " WHERE volumeid=".$volumeid ) );
 				if ( !$volume )
@@ -501,17 +509,23 @@ else if ( $do == "volume" )
 				}
 				if ( submitcheck( "postsubmit" ) )
 				{
+						$volumeorder = intval($_G['gp_volumeorder']);
 						$volumename = addslashes( cutstr( $_G['gp_volumename'], 50 ) );
-						DB::query( "UPDATE ".DB::table( "pdnovel_volume" ).( " SET volumename='".$volumename.( "' WHERE volumeid=".$volumeid ) ) );
-						if ( $volume['volumeid'] == $novel['lastvolumeid'] )
-						{
-								DB::query( "UPDATE ".DB::table( "pdnovel_view" ).( " SET lastvolume='".$volumename.( "' WHERE novelid=".$novelid ) ) );
+						DB::query( "UPDATE ".DB::table( "pdnovel_volume" ).( " SET volumename='".$volumename."',volumeorder=".$volumeorder.( " WHERE volumeid=".$volumeid ) ) );
+						if ( $volume['volumeid'] == $novel['lastvolumeid'] ){
+								DB::query( "UPDATE ".DB::table( "pdnovel_view" ).( " SET lastvolume='".$volumename."', volumeorder=".$volumeorder.( " WHERE novelid=".$novelid ) ) );
 						}
 						showmessage( "do_success", "pdnovel.php?mod=home&do=manage&novelid=".$novelid.( "#volumeid".$volumeid ) );
 				}
 		}
 		else if ( $ac == "del" )
 		{
+				if ( !checkperm( "pdnovelmanage" ) )
+				{
+						showmessage( "group_nopermission", NULL, array(
+								"grouptitle" => $_G['group']['grouptitle']
+						), array( "login" => 1 ) );
+				}
 				$volumeid = $_G['gp_volumeid'];
 				$volume = DB::fetch_first( "SELECT * FROM ".DB::table( "pdnovel_volume" ).( " WHERE volumeid=".$volumeid ) );
 				if ( !$volume )
@@ -550,8 +564,34 @@ else if ( $do == "volume" )
 		loadcache( "diytemplatename" );
 		include( template( "diy:pdnovel/home_volume" ) );
 }
-else if ( $do == "chapter" )
-{
+else if ( $do == "chapter" ){
+		if ( $ac == "bdel" )
+		{
+				if ( !checkperm( "pdnovelmanage" ) )
+				{
+						showmessage( "group_nopermission", NULL, array(
+								"grouptitle" => $_G['group']['grouptitle']
+						), array( "login" => 1 ) );
+				}
+				$novelid = intval( $_G['gp_novelid'] );
+				$novel = DB::fetch_first( "SELECT * FROM ".DB::table( "pdnovel_view" ).( " WHERE novelid=".$novelid ) );
+				if ( !$novel )
+				{
+						showmessage( "小说ID出错" );
+				}
+				foreach ( $_G['gp_cidarr'] as $chapterid )
+				{
+						$chapterid = intval( $chapterid );
+						$query = DB::query( "SELECT * FROM ".DB::table( "pdnovel_chapter" ).( " WHERE chapterid=".intval( $chapterid ) ) );
+						while ( $chapter = DB::fetch( $query ) )
+						{
+							DB::query('DELETE FROM '.DB::table('pdnovel_text_'.$chapter['tableid'])." WHERE id=$chapterid");
+								//@unlink( $chapterpath.$chapter[chaptercontent] );
+						}
+						DB::query( "DELETE FROM ".DB::table( "pdnovel_chapter" ).( " WHERE chapterid=".$chapterid ) );
+				}
+				showmessage( "do_success", "qxs.php?mod=home&do=manage&novelid=".$novelid );
+		}
 		$volumeid = $_G['gp_volumeid'];
 		$volume = DB::fetch_first( "SELECT * FROM ".DB::table( "pdnovel_volume" ).( " WHERE volumeid=".$volumeid ) );
 		if ( !$volume )
@@ -564,15 +604,19 @@ else if ( $do == "chapter" )
 		{
 				showmessage( "小说ID出错" );
 		}
-		if ( $ac == "add" )
-		{
+		if ($ac == 'add'){
+				if (!checkperm("pdnovelpost")){
+						showmessage( "group_nopermission", NULL, array(
+								"grouptitle" => $_G['group']['grouptitle']
+						), array( "login" => 1 ) );
+				}
 				if ( submitcheck( "postsubmit" ) )
 				{
 						$chaptername = addslashes( cutstr( $_G['gp_chaptername'], 50 ) );
 						$content = $_G['gp_chaptercontent'];
 						$lastchaptercontent = addslashes( cutstr( strip_tags( $content ), 600 ) );
 						$content = stripslashes( $content );
-						$content = str_replace( "\r\n", "<br>", $content );
+						$content = str_replace( array( "  " , "<" , ">" , "\r\n" ), array( "　" , "&lt;" , "&gt;" , "<br/>" ) , $content );
 						$chapterwords = ceil( strlen( $content ) / 2 );
 						$order = DB::result_first( "SELECT chapterorder FROM ".DB::table( "pdnovel_chapter" ).( " WHERE volumeid=".$volumeid." ORDER BY chapterorder DESC LIMIT 1" ) );
 						$order = $order ? $order : 0;
@@ -585,9 +629,10 @@ else if ( $do == "chapter" )
 								"posterid" => $_G['uid'],
 								"postdate" => $time,
 								"lastupdate" => $time,
-								"chaptername" => $chaptername,
+								"chaptername" => addslashes($chaptername),
 								"chapterorder" => $chapterorder,
-								"chapterwords" => $chapterwords
+								"chapterwords" => $chapterwords,
+								'tableid' => $tableid //小说表id
 						);
 						DB::insert( "pdnovel_chapter", $insertarr );
 						$chapterid = DB::insert_id( );
@@ -605,9 +650,15 @@ else if ( $do == "chapter" )
 								$content = str_replace( $v, 'data/attachment/pdnovel/img/'.$subsubimgid.'/'.$subimgid.'/'.$imgid.'.jpg', $content);
 						}
 						$content = str_replace( array( '[upimg]', '[/upimg]' ), array( '[img]', '[/img]' ), $content );
-						dmkdir( $chapterpath.$subsubchapterid."/".$subchapterid );
+						$subid2 = rand(100,999);
 						$chaptercontent = $subsubchapterid."/".$subchapterid."/".$chapterid."-".rand( 100, 999 ).".txt";
-						@file_put_contents( $chapterpath.$chaptercontent, $content );
+						$content = str_replace('\'', "’", $content);
+						DB::insert('pdnovel_text_'.$tableid, array(
+							'id' => $chapterid, 
+							'subid1' => $subsubchapterid, 
+							'subid2' => $subid2, 
+							'text' => addslashes($content)
+						));
 						DB::update( "pdnovel_chapter", array(
 								"chaptercontent" => $chaptercontent
 						), "chapterid=".$chapterid );
@@ -619,6 +670,12 @@ else if ( $do == "chapter" )
 		}
 		else if ( $ac == "edit" )
 		{
+				if ( !checkperm( "pdnovelpost" ) )
+				{
+						showmessage( "group_nopermission", NULL, array(
+								"grouptitle" => $_G['group']['grouptitle']
+						), array( "login" => 1 ) );
+				}
 				$chapterid = $_G['gp_chapterid'];
 				$chapter = DB::fetch_first( "SELECT * FROM ".DB::table( "pdnovel_chapter" ).( " WHERE chapterid=".$chapterid ) );
 				if ( !$chapter )
@@ -627,10 +684,12 @@ else if ( $do == "chapter" )
 				}
 				if ( submitcheck( "postsubmit" ) )
 				{
+						$chapterorder = intval($_G['gp_chapterorder']);
+						$volumeid = intval($_G['gp_volumeid']);
 						$chaptername = addslashes( cutstr( $_G['gp_chaptername'], 50 ) );
 						$content = $_G['gp_chaptercontent'];
 						$lastchaptercontent = addslashes( cutstr( strip_tags( $content ), 600 ) );
-						$content = str_replace( "\r\n", "<br>", $content );
+						$content = str_replace( array( "  " , "<" , ">" , "\r\n" ), array( "　" , "&lt;" , "&gt;" , "<br/>" ) , $content );
 						$chapterwords = ceil( strlen( $content ) / 2 );
 						$content = stripslashes( $content );
 						preg_match_all( '/\[upimg\](.+?)\[\/upimg\]/i', $content, $matchvar);
@@ -645,8 +704,8 @@ else if ( $do == "chapter" )
 								$content = str_replace( $v, 'data/attachment/pdnovel/img/'.$subsubimgid.'/'.$subimgid.'/'.$imgid.'.jpg', $content);
 						}
 						$content = str_replace( array( '[upimg]', '[/upimg]' ), array( '[img]', '[/img]' ), $content );
-						@file_put_contents( $chapterpath.$chapter[chaptercontent], $content );
-						DB::query( "UPDATE ".DB::table( "pdnovel_chapter" ).( " SET chaptername='".$chaptername.( "', chapterwords=".$chapterwords." WHERE chapterid={$chapterid}" ) ) );
+						DB::update('pdnovel_text_'.$tableid, array('text' => $content), "id=$chapterid");
+						DB::query( "UPDATE ".DB::table( "pdnovel_chapter" ).( " SET chaptername='".$chaptername.( "', chapterwords=".$chapterwords.", chapterorder=".$chapterorder.", volumeid=".$volumeid." WHERE chapterid={$chapterid}" ) ) );
 						DB::query( "UPDATE ".DB::table( "pdnovel_volume" ).( " SET volumewords=volumewords+".$chapterwords.( "-".$chapter['chapterwords']." WHERE volumeid={$volumeid}" ) ) );
 						if ( $chapter['chapterid'] == $novel['lastchapterid'] )
 						{
@@ -660,14 +719,19 @@ else if ( $do == "chapter" )
 				}
 				else
 				{
-						$content = @file_get_contents( $chapterpath.$chapter[chaptercontent] );
-						$content = preg_replace( "/document.write\\('(.*?)'\\);/i", "\$1", $content );
-						$content = str_replace( "<br>", "\r\n", $content );
-						$content = str_replace( "<br />", "\r\n", $content );
+					$content = DB::result_first('SELECT text FROM '.DB::table('pdnovel_text_'.$tableid." WHERE id=$chapterid"));
+					$content = preg_replace( "/document.write\\('(.*?)'\\);/i", "\$1", $content );
+					$content = str_replace( array( "&lt;" , "&gt;" , "<br>" , "<br/>" ) , array( "<" , ">" , "\r\n" , "\r\n" ) , $content );
+					$content = preg_replace( '/<br.+?>/i', "\r\n", $content );
 				}
 		}
-		else if ( $ac == "del" )
-		{
+		else if ( $ac == "del" ){
+				if ( !checkperm( "pdnovelmanage" ) )
+				{
+						showmessage( "group_nopermission", NULL, array(
+								"grouptitle" => $_G['group']['grouptitle']
+						), array( "login" => 1 ) );
+				}
 				$chapterid = $_G['gp_chapterid'];
 				$chapter = DB::fetch_first( "SELECT * FROM ".DB::table( "pdnovel_chapter" ).( " WHERE chapterid=".$chapterid ) );
 				if ( !$chapter )
@@ -685,7 +749,7 @@ else if ( $do == "chapter" )
 								$subsubimgid = floor( $subimgid / 1000 );
 								@unlink( $imgpath.$subimgid."/".$subsubimgid."/".$img['id'].".jpg" );
 						}
-						@unlink( $chapterpath.$chapter[chaptercontent] );
+						DB::query('DELETE FROM '.DB::table('pdnovel_text_'.$chapter['tableid'])." WHERE id=$chapterid");
 						DB::query( "UPDATE ".DB::table( "pdnovel_volume" ).( " SET volumechapters=volumechapters-1, volumewords=volumewords-".$chapter['chapterwords'].( " WHERE volumeid=".$volumeid ) ) );
 						if ( $chapterid == $novel['lastchapterid'] )
 						{
@@ -703,16 +767,16 @@ else if ( $do == "chapter" )
 								}
 								if ( $lchapter )
 								{
-										$content = @file_get_contents( $chapterpath.$lchapter[chaptercontent] );
+										$content = DB::result_first('SELECT text FROM '.DB::table('pdnovel_text_'.$lchapter['tableid'])." WHERE id=$lchapter[chapterid]");
 										$content = preg_replace( "/document.write\\('(.*?)'\\);/i", "\$1", $content );
 										$content = str_replace( "<br>", "\r\n", $content );
 										$lastchaptercontent = addslashes( cutstr( strip_tags( $content ), 600 ) );
 								}
 								else
 								{
-										$lchapter[chaptername] = "";
-										$lchapter[lastupdate] = $_G['timestamp'];
-										$lchapter[chapterid] = 0;
+										$lchapter['chaptername'] = "";
+										$lchapter['lastupdate'] = $_G['timestamp'];
+										$lchapter['chapterid'] = 0;
 										$lastchaptercontent = "";
 								}
 								DB::query( "UPDATE ".DB::table( "pdnovel_view" ).( " SET lastchapter='".$lchapter['chaptername'].( "', lastupdate=".$lchapter['lastupdate'].", lastchapterid='{$lchapter['chapterid']}', lastchaptercontent='{$lastchaptercontent}', chapters=chapters-1, words=words-{$chapter['chapterwords']} WHERE novelid={$novelid}" ) ) );

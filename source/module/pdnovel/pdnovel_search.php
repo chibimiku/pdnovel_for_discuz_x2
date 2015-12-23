@@ -17,7 +17,7 @@ $coverpath = "data/attachment/pdnovel/cover/";
 $page = $_G['gp_page'] ? $_G['gp_page'] : 1;
 $perpage = 10;
 $limit_start = $perpage * ( $page - 1 );
-$ac = $_G['gp_ac'];
+$ac = empty( $_G['gp_ac'] ) ? ( !empty( $_G['gp_author'] ) ? 'author' : 'name') : $_G['gp_ac'];
 $srchtxt = $keyword = trim( $_G['gp_srchtxt'] );
 if ( empty( $keyword ) && submitcheck( "searchsubmit", 1 ) )
 {
@@ -46,7 +46,7 @@ while ( $novel = DB::fetch( $query ) )
 		$novel['lastupdate'] = strftime( "%Y-%m-%d %X", $novel['lastupdate'] );
 		$novellist[] = $novel;
 }
-$mpurl = "pdnovel.php?mod=search&ac=".$ac."&srchtxt={$keyword}&searchsubmit=yes";
-$multi = multi( $num, $perpage, $page, $mpurl );
+$mpurl = "pdnovel.php?mod=search&ac=".$ac."&srchtxt=".urlencode( $keyword ) ."&searchsubmit=yes";
+$multi = defined( "IN_MOBILE" ) ? multipage( $num, $perpage, $page, $mpurl ) : $multi = multi( $num, $perpage, $page, $mpurl );
 include_once( template( "pdnovel/search" ) );
 ?>

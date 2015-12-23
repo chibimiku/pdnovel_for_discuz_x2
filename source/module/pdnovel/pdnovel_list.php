@@ -14,12 +14,12 @@ if ( !defined( "IN_DISCUZ" ) )
 loadcache( "pdnovelcategory" );
 $ncc = $_G['cache']['pdnovelcategory'];
 $catid = $_G['gp_catid'] ? $_G['gp_catid'] : 0;
-$full = $_G['gp_full'] ? $_G['gp_full'] : 0;
-$words = $_G['gp_words'] ? $_G['gp_words'] : 0;
-$update = $_G['gp_update'] ? $_G['gp_update'] : 0;
-$letter = $_G['gp_letter'] ? $_G['gp_letter'] : 0;
-$orderby = $_G['gp_orderby'] ? $_G['gp_orderby'] : 0;
-$page = $_G['gp_page'] ? $_G['gp_page'] : 1;
+$full = $_G['gp_full'] ? intval( $_G['gp_full'] ) : 0;
+$words = $_G['gp_words'] ? intval( $_G['gp_words'] ) : 0;
+$update = $_G['gp_update'] ? intval( $_G['gp_update'] ) : 0;
+$letter = $_G['gp_letter'] ? addslashes( $_G['gp_letter'] ) : 0;
+$orderby = $_G['gp_orderby'] ? intval( $_G['gp_orderby'] ) : 0;
+$page = $_G['gp_page'] ? intval(  $_G['gp_page'] ) : 1;
 $sql = $orderbyadd = "";
 if( $_G['gp_show'] != '0' && $_G['gp_show'] != '1' )
 {

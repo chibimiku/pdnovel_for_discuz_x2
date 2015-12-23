@@ -17,7 +17,7 @@ if ( empty( $_G['uid'] ) )
 }
 $ac = in_array( $_GET['ac'], array( "newnovel", "managenovel", "comment", "deletecomment", "managecomment" ) ) ? $_GET['ac'] : "index";
 $novelid = $_G['gp_novelid'];
-$message = $_G['gp_message'];
+$message = addslashes( $_G['gp_message'] );
 if ( $ac == "index" )
 {
 		showmessage( $pdlang['novelcp_error'] );

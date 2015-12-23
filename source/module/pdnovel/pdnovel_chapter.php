@@ -29,12 +29,34 @@ $upname = $ncc[$novel['upid']]['catname'];
 $novel['lastupdate'] = strftime( "%Y-%m-%d %X", $novel['lastupdate'] );
 $volumechapter = "";
 $volumenum = 0;
-$vquery = DB::query( "SELECT * FROM ".DB::table( "pdnovel_volume" ).( " WHERE novelid=".$novelid." ORDER BY volumeid ASC" ) );
+$vquery = DB::query( "SELECT volumeid,volumename,volumeorder FROM ".DB::table( "pdnovel_volume" ).( " WHERE novelid=".$novelid." ORDER BY volumeorder ASC,volumeid ASC" ) );
+if( defined( "IN_MOBILE" ) )
+{
+		$page = $_G['gp_page'] ? $_G['gp_page'] : 1;
+		$perpage = 20;
+		$limit_start = $perpage * ( $page - 1 );
+		$chaptercount = DB::result_first( "SELECT count(*) FROM ".DB::table( "pdnovel_chapter" )." WHERE novelid=$novelid;" );
+		while ( $volume = DB::fetch( $vquery ) )
+		{
+				$cquery = DB::query( "SELECT chapterid,chaptername,chapterorder FROM ".DB::table( "pdnovel_chapter" ).( " WHERE novelid=".$novelid.( " AND volumeid=".$volume['volumeid']." ORDER BY chapterorder ASC,chapterid ASC" ) ) );
+				while ( $chapter = DB::fetch( $cquery ) )
+				{
+						$tempay[] = $chapter;
+				}
+		}
+		for( $i = $limit_start; $i < $perpage+$limit_start && $i < count($tempay); ++$i)
+		{
+				$chapteray[] = $tempay[$i];
+		}
+		unset($tempay);
+		$multi = multipage( $chaptercount, $perpage, $page, "qxs.php?mod=chapter&novelid=$novelid" );
+		include( template( "diy:pdnovel/chapter" ) );
+}
 while ( $volume = DB::fetch( $vquery ) )
 {
 		++$volumenum;
 		$volumechapter .= "<div class=\"contenttitle\"><h2><span>".$volumenum."</span>¡¶".$novel[name]."¡·".$volume[volumename]."</h2></div><div class=\"contentlist\"><ul>";
-		$cquery = DB::query( "SELECT * FROM ".DB::table( "pdnovel_chapter" ).( " WHERE novelid=".$novelid.( " AND volumeid=".$volume['volumeid']." ORDER BY chapterid ASC" ) ) );
+		$cquery = DB::query( "SELECT chapterid,chaptername,chapterorder FROM ".DB::table( "pdnovel_chapter" ).( " WHERE novelid=".$novelid.( " AND volumeid=".$volume['volumeid']." ORDER BY chapterorder ASC,chapterid ASC" ) ) );
 		while ( $chapter = DB::fetch( $cquery ) )
 		{
 				$chapter['lastupdate'] = strftime( "%Y-%m-%d %X", $chapter['lastupdate'] );

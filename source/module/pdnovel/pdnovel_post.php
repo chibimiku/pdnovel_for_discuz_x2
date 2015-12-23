@@ -187,10 +187,10 @@ else
 				$chapter = DB::fetch_first( "SELECT * FROM ".DB::table( "novel_chapter" ).( " WHERE novelid=".$novelid.( " AND chapterid=".$chapterid." LIMIT 1" ) ) );
 				if ( !submitcheck( "submit" ) )
 				{
-						$chaptercontent = file_get_contents( $chapter['chaptercontent'] );
-						$chaptercontent = str_replace( "document.write('", "", $chaptercontent );
-						$chaptercontent = str_replace( "');", "", $chaptercontent );
-						$chaptercontent = str_replace( "<br>", "\r\n", $chaptercontent );
+					$chaptercontent = DB::result_first('SELECT text FROM '.DB::table('pdnovel_text_'.$chapter['tableid'])." WHERE id=$chapter[chapterid]");
+					$chaptercontent = str_replace( "document.write('", "", $chaptercontent );
+					$chaptercontent = str_replace( "');", "", $chaptercontent );
+					$chaptercontent = str_replace( "<br>", "\r\n", $chaptercontent );
 				}
 				else
 				{
@@ -208,9 +208,8 @@ else
 										"chapterwords" => $chapterwords
 								);
 								DB::update( "novel_chapter", $chapter_data, "novelid=".$novelid.( " AND chapterid=".$chapterid." LIMIT 1" ) );
-								$fp = @fopen( $chapter['chaptercontent'], "wb" );
-								@fwrite( $fp, $content );
-								fclose( $fp );
+								DB::update('pdnovel_text_'.$chapter['tableid'], array('text' => addslashes($content)), "id=$chapterid");
+
 								$words = $novel['words'] + $chapterwords - $chapter['chapterwords'];
 								DB::update( "novel_novel", array(
 										"words" => $words,

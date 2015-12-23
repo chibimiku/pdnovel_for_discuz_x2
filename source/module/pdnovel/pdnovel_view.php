@@ -35,6 +35,11 @@ $novel['permission'] = $novel['permission'] == 1 ? $lang['permission'] : $lang['
 $novel['first'] = $novel['first'] == 1 ? $lang['first'] : $lang['nofirst'];
 $novel['intro'] = mysql2html( $novel['intro'] );
 $novel['lastchaptercontent'] = mysql2html( $novel['lastchaptercontent'] );
+
+//covert img tag to real image html
+$novel['lastchaptercontent'] = str_replace('[img]', '<img class="novel_img" src="'.$_G['config']['novelurl'], $novel['lastchaptercontent']);
+$novel['lastchaptercontent'] = str_replace('[/img]', '" />', $novel['lastchaptercontent']);
+
 $catid = $novel['upid'];
 if ( 0 < $catid )
 {
