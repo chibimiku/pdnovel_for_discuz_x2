@@ -1,0 +1,25 @@
+<!--{subtemplate common/header}-->
+<!--{subtemplate pdnovel/search_pub}-->
+
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+<link rel="stylesheet" type="text/css" href="template/default/pdnovel/css/view.css" />
+<link rel="stylesheet" type="text/css" href="template/default/pdnovel/css/donwload.css" />
+<div id="wp" class="wp"><div id="ct" class="wp cl w">
+<div class="nfl">
+<div class="f_c altw">
+<div id="messagetext" class="alert_info" >
+<div class="title"><p>&nbsp;&nbsp;{$novel['name']}txt下载</p></div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="pdnovel.php?mod=download&novelid={$novelid}&type=txt" hidefocus="true" >点击下载</a>
+<div class="title"><p>&nbsp;&nbsp;{$novel['name']}zip下载</p></div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="pdnovel.php?mod=download&novelid={$novelid}&type=zip" hidefocus="true" >点击下载</a>
+<div class="title"><p>&nbsp;&nbsp;{$novel['name']}分章下载</p></div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="pdnovel.php?mod=download&novelid={$novelid}&type=chapter" hidefocus="true" >点击下载</a>
+</div>
+</div>
+</div>
+</div>
+
+<!--{subtemplate common/footer}-->

@@ -1,0 +1,6 @@
+INSERT INTO pre_pdmodule_power (name, action, moduleid, power) VALUES('阅读普通小说', 'pdnovelread', 11, 'a:1:{i:1;s:1:"1";}');
+INSERT INTO pre_pdmodule_power (name, action, moduleid, power) VALUES('阅读VIP小说', 'pdnovelvipread', 11, 'a:1:{i:1;s:1:"1";}');
+INSERT INTO pre_pdmodule_power (name, action, moduleid, power) VALUES('下载小说', 'pdnoveldown', 11, 'a:1:{i:1;s:1:"1";}');
+INSERT INTO pre_common_credit_rule (rulename, action, cycletype, cycletime, rewardnum, norepeat, extcredits1, extcredits2, extcredits3, extcredits4, extcredits5, extcredits6, extcredits7, extcredits8, fids) VALUES('阅读普通小说', 'pdnovelread', 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+INSERT INTO pre_common_credit_rule (rulename, action, cycletype, cycletime, rewardnum, norepeat, extcredits1, extcredits2, extcredits3, extcredits4, extcredits5, extcredits6, extcredits7, extcredits8, fids) VALUES('阅读VIP小说', 'pdnovelvipread', 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');
+INSERT INTO pre_common_credit_rule (rulename, action, cycletype, cycletime, rewardnum, norepeat, extcredits1, extcredits2, extcredits3, extcredits4, extcredits5, extcredits6, extcredits7, extcredits8, fids) VALUES('下载小说', 'pdnoveldown', 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '');

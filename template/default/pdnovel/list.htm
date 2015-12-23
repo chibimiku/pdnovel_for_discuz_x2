@@ -1,0 +1,184 @@
+<!--{subtemplate common/header}-->
+<!--{subtemplate pdnovel/search_pub}-->
+<style id="diy_style" type="text/css"></style>
+<div class="wp">
+	<!--[diy=diy1]--><div id="diy1" class="area"></div><!--[/diy]-->
+</div>
+
+<link rel="stylesheet" type="text/css" href="template/default/pdnovel/css/view.css" />
+
+<div id="pdmodule">
+	<!--{ad/pdnovel/mb hm/1}-->
+	<div class="pdbox">
+		<div class="pdlistselect pdall">
+			<div class="title">
+				<span class="titletext"><h2>$_G['setting']['bbname']{lang list_allnovel}</h2></span>
+				<!--{if !$_G['uid']}--><span class="subtitle"><a href="member.php?mod=register" target="_blank">[注册成为会员]</a></span><!--{/if}-->
+			</div>
+			<div class="showselect">
+				<div id="select1bk">
+					<div class="selectdiv clearfix" id="divBig">
+						<span class="selectmz">{lang list_bigcategory}</span>
+						<ul class="selectul">
+							$selectul
+						</ul>
+					</div>
+					<div id="divSmall" class="selectxx clearfix">
+						<ul class="selectyy">
+							$selectyy
+						</ul>
+					</div>
+				</div>
+				<div class="selectdiv2 clearfix">
+					<span class="selectmz2">{lang list_full}</span>
+					<ul class="selectul2">
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=0&words=$words&update=$update&letter=$letter&orderby=$orderby&show=$show" id='f0' {if $full==0}class='selectfont'{else}class='hand'{/if} title='{lang list_nolimit}'>{lang list_nolimit}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=2&words=$words&update=$update&letter=$letter&orderby=$orderby&show=$show" id='f1' {if $full==2}class='selectfont'{else}class='hand'{/if} title='{lang list_full_no}'>{lang list_full_no}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=1&words=$words&update=$update&letter=$letter&orderby=$orderby&show=$show" id='f2' {if $full==1}class='selectfont'{else}class='hand'{/if} title='{lang list_full_yes}'>{lang list_full_yes}</a></li>
+					</ul>
+				</div>
+				<div class="selectdiv2 clearfix">
+					<span class="selectmz2">{lang list_words}</span>
+					<ul class="selectul2">
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=0&update=$update&letter=$letter&orderby=$orderby&show=$show" id='w0' {if $words==0}class='selectfont'{else}class='hand'{/if} title='{lang list_all}'>{lang list_all}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=1&update=$update&letter=$letter&orderby=$orderby&show=$show" id='w1' {if $words==1}class='selectfont'{else}class='hand'{/if} title='{lang list_less30}'>{lang list_less30}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=2&update=$update&letter=$letter&orderby=$orderby&show=$show" id='w2' {if $words==2}class='selectfont'{else}class='hand'{/if} title='{lang list_less50}'>{lang list_less50}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=3&update=$update&letter=$letter&orderby=$orderby&show=$show" id='w3' {if $words==3}class='selectfont'{else}class='hand'{/if} title='{lang list_less100}'>{lang list_less100}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=4&update=$update&letter=$letter&orderby=$orderby&show=$show" id='w4' {if $words==4}class='selectfont'{else}class='hand'{/if} title='{lang list_less200}'>{lang list_less200}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=5&update=$update&letter=$letter&orderby=$orderby&show=$show" id='w5' {if $words==5}class='selectfont'{else}class='hand'{/if} title='{lang list_more200}'>{lang list_more200}</a></li>
+					</ul>
+				</div>
+				<div class="selectdiv2 clearfix">
+					<span class="selectmz2">{lang list_orderby}</span>
+					<ul class="selectul2">
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=0&show=$show" id='o0' {if $orderby==0}class='selectfont'{else}class='hand'{/if} title='{lang list_default}'>{lang list_default}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=1&show=$show" id='o1' {if $orderby==1}class='selectfont'{else}class='hand'{/if} title='{lang list_dayvisit}'>{lang list_dayvisit}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=2&show=$show" id='o2' {if $orderby==2}class='selectfont'{else}class='hand'{/if} title='{lang list_weekvisit}'>{lang list_weekvisit}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=3&show=$show" id='o3' {if $orderby==3}class='selectfont'{else}class='hand'{/if} title='{lang list_monthvisit}'>{lang list_monthvisit}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=4&show=$show" id='o4' {if $orderby==4}class='selectfont'{else}class='hand'{/if} title='{lang list_allvisit}'>{lang list_allvisit}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=5&show=$show" id='o5' {if $orderby==5}class='selectfont'{else}class='hand'{/if} title='{lang list_dayvote}'>{lang list_dayvote}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=6&show=$show" id='o6' {if $orderby==6}class='selectfont'{else}class='hand'{/if} title='{lang list_weekvote}'>{lang list_weekvote}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=7&show=$show" id='o7' {if $orderby==7}class='selectfont'{else}class='hand'{/if} title='{lang list_monthvote}'>{lang list_monthvote}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=8&show=$show" id='o8' {if $orderby==8}class='selectfont'{else}class='hand'{/if} title='{lang list_allvote}'>{lang list_allvote}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=9&show=$show" id='o9' {if $orderby==9}class='selectfont'{else}class='hand'{/if} title='{lang list_allwords}'>{lang list_allwords}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=10&show=$show" id='o10' {if $orderby==10}class='selectfont'{else}class='hand'{/if} title='{lang list_allmark}'>{lang list_allmark}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=11&show=$show" id='o10' {if $orderby==11}class='selectfont'{else}class='hand'{/if} title='{lang list_click}'>{lang list_click}</a></li>
+					</ul>
+				</div>
+				<div class="selectdiv2 clearfix">
+					<span class="selectmz2">{lang list_lastupdate}</span>
+					<ul class="selectul2">
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=0&letter=$letter&orderby=$orderby&show=$show" id='u0' {if $update==0}class='selectfont'{else}class='hand'{/if} title='{lang list_nolimit}'>{lang list_nolimit}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=1&letter=$letter&orderby=$orderby&show=$show" id='u1' {if $update==1}class='selectfont'{else}class='hand'{/if} title='{lang list_oneday}'>{lang list_oneday}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=2&letter=$letter&orderby=$orderby&show=$show" id='u2' {if $update==2}class='selectfont'{else}class='hand'{/if} title='{lang list_threeday}'>{lang list_threeday}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=3&letter=$letter&orderby=$orderby&show=$show" id='u3' {if $update==3}class='selectfont'{else}class='hand'{/if} title='{lang list_fiveday}'>{lang list_fiveday}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=4&letter=$letter&orderby=$orderby&show=$show" id='u4' {if $update==4}class='selectfont'{else}class='hand'{/if} title='{lang list_sevenday}'>{lang list_sevenday}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=5&letter=$letter&orderby=$orderby&show=$show" id='u5' {if $update==5}class='selectfont'{else}class='hand'{/if} title='{lang list_halfmonth}'>{lang list_halfmonth}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=6&letter=$letter&orderby=$orderby&show=$show" id='u6' {if $update==6}class='selectfont'{else}class='hand'{/if} title='{lang list_onemonth}'>{lang list_onemonth}</a></li>
+					</ul>
+				</div>
+				<div class="selectdiv2 clearfix">
+					<span class="selectmz2">{lang list_letters}</span>
+					<ul class="selectul3">
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=0&orderby=$orderby&show=$show" id='l0' {if $letter===0}class='selectfont'{else}class='hand'{/if} title='{lang list_nolimit}'>{lang list_nolimit}</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=a&orderby=$orderby&show=$show" id='la' {if $letter==='a'}class='selectfont'{else}class='hand'{/if} title='[A]'>[A]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=b&orderby=$orderby&show=$show" id='lb' {if $letter==='b'}class='selectfont'{else}class='hand'{/if} title='[B]'>[B]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=c&orderby=$orderby&show=$show" id='lc' {if $letter==='c'}class='selectfont'{else}class='hand'{/if} title='[C]'>[C]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=d&orderby=$orderby&show=$show" id='ld' {if $letter==='d'}class='selectfont'{else}class='hand'{/if} title='[D]'>[D]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=e&orderby=$orderby&show=$show" id='le' {if $letter==='e'}class='selectfont'{else}class='hand'{/if} title='[E]'>[E]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=f&orderby=$orderby&show=$show" id='lf' {if $letter==='f'}class='selectfont'{else}class='hand'{/if} title='[F]'>[F]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=g&orderby=$orderby&show=$show" id='lg' {if $letter==='g'}class='selectfont'{else}class='hand'{/if} title='[G]'>[G]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=h&orderby=$orderby&show=$show" id='lh' {if $letter==='h'}class='selectfont'{else}class='hand'{/if} title='[H]'>[H]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=i&orderby=$orderby&show=$show" id='li' {if $letter==='i'}class='selectfont'{else}class='hand'{/if} title='[I]'>[I]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=j&orderby=$orderby&show=$show" id='lj' {if $letter==='j'}class='selectfont'{else}class='hand'{/if} title='[J]'>[J]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=k&orderby=$orderby&show=$show" id='lk' {if $letter==='k'}class='selectfont'{else}class='hand'{/if} title='[K]'>[K]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=l&orderby=$orderby&show=$show" id='ll' {if $letter==='l'}class='selectfont'{else}class='hand'{/if} title='[L]'>[L]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=m&orderby=$orderby&show=$show" id='lm' {if $letter==='m'}class='selectfont'{else}class='hand'{/if} title='[M]'>[M]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=n&orderby=$orderby&show=$show" id='ln' {if $letter==='n'}class='selectfont'{else}class='hand'{/if} title='[N]'>[N]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=o&orderby=$orderby&show=$show" id='lo' {if $letter==='o'}class='selectfont'{else}class='hand'{/if} title='[O]'>[O]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=p&orderby=$orderby&show=$show" id='lp' {if $letter==='p'}class='selectfont'{else}class='hand'{/if} title='[P]'>[P]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=q&orderby=$orderby&show=$show" id='lq' {if $letter==='q'}class='selectfont'{else}class='hand'{/if} title='[Q]'>[Q]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=r&orderby=$orderby&show=$show" id='lr' {if $letter==='r'}class='selectfont'{else}class='hand'{/if} title='[R]'>[R]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=s&orderby=$orderby&show=$show" id='ls' {if $letter==='s'}class='selectfont'{else}class='hand'{/if} title='[S]'>[S]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=t&orderby=$orderby&show=$show" id='lt' {if $letter==='t'}class='selectfont'{else}class='hand'{/if} title='[T]'>[T]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=u&orderby=$orderby&show=$show" id='lu' {if $letter==='u'}class='selectfont'{else}class='hand'{/if} title='[U]'>[U]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=v&orderby=$orderby&show=$show" id='lv' {if $letter==='v'}class='selectfont'{else}class='hand'{/if} title='[V]'>[V]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=w&orderby=$orderby&show=$show" id='lw' {if $letter==='w'}class='selectfont'{else}class='hand'{/if} title='[W]'>[W]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=x&orderby=$orderby&show=$show" id='lx' {if $letter==='x'}class='selectfont'{else}class='hand'{/if} title='[X]'>[X]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=y&orderby=$orderby&show=$show" id='ly' {if $letter==='y'}class='selectfont'{else}class='hand'{/if} title='[Y]'>[Y]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=z&orderby=$orderby&show=$show" id='lz' {if $letter==='z'}class='selectfont'{else}class='hand'{/if} title='[Z]'>[Z]</a></li>
+						<li><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=1&orderby=$orderby&show=$show" id='l1' {if $letter==1}class='selectfont'{else}class='hand'{/if} title='{lang list_other}'>{lang list_other}</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--{ad/pdnovel/mb hm/2}-->
+	<div class="pdbox">
+		<!--{ad/pdnovel/mb hm/4}-->
+		<div class="pdmaincont">
+			<div class="storelistbt">
+				<div class="storelistbt1"><span class="img"><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=$orderby&show=0"  style="<!--{if $show == 0}-->font-weight:bolder;<!--{else}-->font-weight:normal;<!--{/if}-->">{lang list_imgshow}</a></span> <span class="text"><a href="pdnovel.php?mod=list&catid=$catid&full=$full&words=$words&update=$update&letter=$letter&orderby=$orderby&show=1" style="<!--{if $show == 1}-->font-weight:bolder;<!--{else}-->font-weight:normal;<!--{/if}-->">{lang list_textshow}</a></span></div>
+				<div class="storelistbt2">{$page}/{$realpages}{lang list_page}</div>
+			</div>
+		<!--{if $show == 0}-->
+			<div class="storelistbt3">
+				<!--{loop $novellist $key $novel}-->
+				<!--{eval $num = $key+1}-->
+				<div class="sw">
+					<div class="swc1">
+						<div class="swz1">$num.</div>
+						<a href="pdnovel.php?mod=view&novelid=$novel['novelid']" title="$novel['name']" target="_blank"><img src="<!--{if $novel['cover']}-->data/attachment/pdnovel/cover/$novel['cover']<!--{else}-->template/default/pdnovel/img/nocover.jpg<!--{/if}-->" alt="$novel['name']" width="80" height="100" onerror="errorcover(this)" /></a>
+						<a href="pdnovel.php?mod=view&novelid=$novel['novelid']" title="$novel['name']" target="_blank"><!--{eval echo mb_substr($novel['name'],0,10,'GBK')}--></a>&nbsp;&nbsp;{lang view_author}<a href="pdnovel.php?mod=search&ac=author&srchtxt=$novel['author']&searchsubmit=yes" title="$novel['author']" target="_blank">$novel['author']</a>&nbsp;&nbsp;{lang list_category}：<a href="pdnovel.php?mod=list&catid=$novel['catid']" title="$novel['catname']" target="_blank">$novel['catname']</a><br />
+						{lang list_lastupdate}$novel['lastupdate']&nbsp;&nbsp;{lang list_words}$novel['words']&nbsp;&nbsp;{lang list_full}<!--{if $novel['full']==0}-->{lang list_full_no}<!--{else}-->{lang list_full_yes}<!--{/if}--><div class="txt"><!--{eval echo mb_substr($novel['intro'],0,40,'GBK')}--></div>
+					</div>
+					<div class="opt">
+						<p><a href="pdnovel.php?mod=chapter&novelid=$novel['novelid']" title="$novel['name']" target="_blank">{lang view_chapter}</a></p>
+						<p><a href="pdnovel.php?mod=misc&ac=mark&novelid=$novel['novelid']" onclick="showWindow('login', this.href)">{lang view_mark}</a></p>
+						<p><a href="pdnovel.php?mod=download&novelid=$novel['novelid']" title="$novel['name']" target="_blank">{lang view_download}</a></p>
+					</div>
+				</div>
+			<!--{/loop}-->
+			</div>
+		<!--{else}-->
+			<div class="storelistbt7">
+				<div class="storelistbt7z">{lang list_number}</div>
+				<div class="storelistbt7a">{lang list_category}</div>
+				<div class="storelistbt7b">{lang list_namechapter}</div>
+				<div class="storelistbt7c"><!--{if $orderby==0}-->{lang list_word}<!--{elseif $orderby==1}-->{lang list_dayvisit}<!--{elseif $orderby==2}-->{lang list_weekvisit}<!--{elseif $orderby==3}-->{lang list_monthvisit}<!--{elseif $orderby==4}-->{lang list_allvisit}<!--{elseif $orderby==5}-->{lang list_dayvote}<!--{elseif $orderby==6}-->{lang list_weekvote}<!--{elseif $orderby==7}-->{lang list_monthvote}<!--{elseif $orderby==8}-->{lang list_allvote}<!--{elseif $orderby==9}-->{lang list_allwords}<!--{elseif $orderby==10}-->{lang list_allmark}<!--{elseif $orderby==11}-->{lang list_click}<!--{/if}--></div>
+				<div class="storelistbt7d">{lang list_author}</div>
+				<div class="storelistbt7e">{lang list_dateline}</div>
+			</div>
+			<!--{loop $novellist $key $novel}-->
+			<!--{eval $num = $key+1}-->
+			<div class="sw<!--{if $key%2==0}-->2<!--{else}-->1<!--{/if}-->">
+				<div class="swz2">$num</div>
+				<div class="swa">[<a href="pdnovel.php?mod=list&catid={$novel['upid']}" class="gray">{$novel['upname']}</a>/<a href="pdnovel.php?mod=list&catid={$novel['catid']}" class="gray">{$novel['catname']}</a>]</div>
+				<div class="swb"><span class="swbt"><a href="pdnovel.php?mod=view&novelid=$novel['novelid']" target="_blank">$novel['name']</a> </span><a href="pdnovel.php?mod=read&novelid=$novel['novelid']&chapterid=$novel['lastchapterid']" class="gray" target="_blank">$novel['lastchapter']</a></div>
+				<div class="swc2"><!--{if $orderby==0}-->$novel[words]<!--{elseif $orderby==1}-->$novel[dayvisit]<!--{elseif $orderby==2}-->$novel[weekvisit]<!--{elseif $orderby==3}-->$novel[monthvisit]<!--{elseif $orderby==4}-->$novel[allvisit]<!--{elseif $orderby==5}-->$novel[dayvote]<!--{elseif $orderby==6}-->$novel[weekvote]<!--{elseif $orderby==7}-->$novel[monthvote]<!--{elseif $orderby==8}-->$novel[allvote]<!--{elseif $orderby==9}-->$novel[words]<!--{elseif $orderby==10}-->$novel[allmark]<!--{elseif $orderby==11}-->$novel[click]<!--{/if}--></div><div class="swd"><a href="pdnovel.php?mod=search&ac=author&srchtxt=$novel['author']&searchsubmit=yes" class="black" target="_blank">$novel['author']</a></div>
+				<div class="swe">$novel['lastupdate']</div>
+			</div>
+			<!--{/loop}-->
+		<!--{/if}-->
+			$multi
+			<!--{ad/pdnovel/mb hm/5}-->
+			<!--[diy=diypdmain]--><div id="diypdmain" class="area"></div><!--[/diy]-->
+			<!--{ad/pdnovel/mb hm/6}-->
+		</div>
+		<div class="pdsidecont">
+			<!--{ad/pdnovel/mb hm/7}-->
+			<!--[diy=diypdside]--><div id="diypdside" class="area"></div><!--[/diy]-->
+			<!--{ad/pdnovel/mb hm/8}-->
+		</div>
+	</div>
+	<!--{ad/pdnovel/mb hm/3}-->
+</div>
+
+<div class="wp">
+	<!--[diy=diy2]--><div id="diy2" class="area"></div><!--[/diy]-->
+</div>
+<script type="text/javascript">
+setcookie( 'list_show' ,'$show' ,99999999);
+</script>
+<script src="template/default/pdnovel/js/footer.js" type="text/javascript"></script>
+<!--{subtemplate common/footer}-->
