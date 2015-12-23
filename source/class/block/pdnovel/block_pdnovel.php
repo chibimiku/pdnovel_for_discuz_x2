@@ -231,7 +231,7 @@ class block_pdnovel {
 				'title' => cutstr($data['name'], $titlelength, ''),
 				'url' => $url,
 				'pic' => 'pdnovel/cover/'.$data['cover'],
-				'picflag' => $data['picflag'],
+				'picflag' => '3', // 3=> novel pic
 				'summary' => cutstr(strip_tags($data['intro']), $summarylength, ''),
 				'fields' => array(
 					'authorid'=>$data['authorid'],

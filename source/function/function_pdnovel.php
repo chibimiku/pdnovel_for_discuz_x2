@@ -1,3 +1,313 @@
-<?php // This file is protected by copyright law & provided under license. Copyright(C) 2012-2020 www.poudu.net,www.chnb.net, All rights reserved.
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=8464;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMjc0KTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ0VudGVyeW91d2toUkhZS05XT1VUQWFCYkNjRGRGZkdnSWlKakxsTW1QcFFxU3NWdlh4WnowMTIzNDU2Nzg5Ky89JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+/*********************/
+/*                   *//*  Version : 5.1.0  *//*  Author  : RM     */
+/*  Last Modify  : gool  */
+/*  Comment : 071223 */
+/*                   */
+/*********************/
+if ( !defined( "IN_DISCUZ" ) )
+{
+		exit( "Access Denied" );
+}
+function multipage( $num, $perpage, $curpage, $mpurl )
+{
+		global $realpages;
+		global $lang;
+		$show = defined( "IN_MOBILE" ) ? 5 : 10;
+		$realpages = 1;
+		if ( $perpage < $num )
+		{
+				$realpages = @ceil( $num / $perpage );
+				if ( $realpages < $show )
+				{
+						$from = 1;
+						$to = $realpages;
+				}
+				else
+				{
+						$from = $curpage - floor( $show / 2 );
+						$to = $from + $show - 1;
+						if ( $from < 1 )
+						{
+								$to = $curpage + 1 - $from;
+								$from = 1;
+								if ( $to - $from < $show )
+								{
+										$to = $show;
+								}
+						}
+						else if ( $realpages < $to )
+						{
+								$from = $realpages - $show - 1;
+								$to = $realpages;
+						}
+				}
+				$multipage = "<a href=\"".$mpurl."&page=1\">".$lang['list_index_page']."</a>|";
+				$i = $from;
+				for ( ;	$i <= $to; ++$i	)
+				{
+						if( $i == 0){continue;}
+						$multipage .= $i == $curpage ? "<strong><a href=\"".$mpurl."&page=".$i."\" class=\"f_s\">".$i."</a></strong>" : "<a href=\"".$mpurl."&page=".$i."\" class=\"f_a\">".$i."</a>";
+				}
+				$multipage .= "|<a href=\"".$mpurl."&page=".$realpages."\">".$lang['list_end_page']."<form action=\"$mpurl\" method=\"GET\" style=\"margin:0px;display: inline\"><input type=\"text\" name=\"page\" size=\"2\"> ".$lang['list_page']." <input type=\"submit\" class=\"button\" value=\"GO\" /></form>&nbsp;".$curpage."/".$realpages."页";
+				$multipage = "<div class=\"storelistbottom\">".$multipage."</div>";
+		}
+		return $multipage;
+}
+
+function mobilemulti( $num, $perpage, $curpage, $mpurl )
+{
+		global $realpages,$nextpage;
+		global $lang;
+		$show = 5;
+		$realpages = 1;
+		if ( $perpage < $num )
+		{
+				$realpages = @ceil( $num / $perpage );
+				if ( $realpages < $show )
+				{
+						$from = 1;
+						$to = $realpages;
+				}
+				else
+				{
+						$from = $curpage - floor( $show / 2 );
+						$to = $from + $show - 1;
+						if ( $from < 1 )
+						{
+								$to = $curpage + 1 - $from;
+								$from = 1;
+								if ( $to - $from < $show )
+								{
+										$to = $show;
+								}
+						}
+						else if ( $realpages < $to )
+						{
+								$from = $realpages - $show - 1;
+								$to = $realpages;
+						}
+				}
+				$i = $from;
+				for ( ;	$i <= $to;	++$i	)
+				{
+						if( $i == 0){continue;}
+						$multipage .= $i == $curpage ? "<strong><a href=\"".$mpurl."&page=".$i."\" class=\"f_s\">".$i."</a></strong>" : "<a href=\"".$mpurl."&page=".$i."\" class=\"f_a\">".$i."</a>";
+				}
+				$multipage = "<div class=\"storelistbottom\">".$multipage;
+				if ( $realpages >= ($curpage+1) )
+				{
+						$multipage .= "<a href=\"".$mpurl."&page=".($curpage+1)."\" class=\"f_a\">下一页</a>";
+				}
+				else
+				{
+						$multipage .= "<a href=\"$nextpage\" class=\"f_a\">下一章</a>";
+				}
+				$multipage .= "</div>";
+		}
+		return $multipage;
+}
+function pdupdateclick( $novelid, $lastvisit )
+{
+		$now = time( );
+		$visitupdate = "lastvisit=".$now.",allvisit=allvisit+1";
+		if ( date( "d", $lastvisit ) == date( "d", $now ) )
+		{
+				$visitupdate .= ",dayvisit = dayvisit+1";
+		}
+		else
+		{
+				$visitupdate .= ",dayvisit = 1";
+		}
+		if ( date( "W", $lastvisit ) == date( "W", $now ) )
+		{
+				$visitupdate .= ",weekvisit = weekvisit+1";
+		}
+		else
+		{
+				$visitupdate .= ",weekvisit = 1";
+		}
+		if ( date( "m", $lastvisit ) == date( "m", $now ) )
+		{
+				$visitupdate .= ",monthvisit = monthvisit+1";
+		}
+		else
+		{
+				$visitupdate .= ",monthvisit = 1";
+		}
+		DB::query( "UPDATE LOW_PRIORITY ".DB::table( "pdnovel_view" ).( " SET ".$visitupdate." WHERE novelid={$novelid}" ), "UNBUFFERED" );
+}
+
+function mysql2html( $message )
+{
+		$message = str_replace( " ", "&nbsp;", $message );
+		$message = nl2br( $message );
+		return $message;
+}
+
+function get_initial( $str )
+{
+		$str = str_replace( array( "《", "》", "<", ">" ), "", $str );
+		$asc = ord( substr( $str, 0, 1 ) );
+		if ( $asc < 160 )
+		{
+				if ( 48 <= $asc && $asc <= 57 )
+				{
+						return "1";
+				}
+				if ( 65 <= $asc && $asc <= 90 )
+				{
+						return chr( $asc );
+				}
+				if ( 97 <= $asc && $asc <= 122 )
+				{
+						return chr( $asc - 32 );
+				}
+				return "1";
+		}
+		$asc = $asc * 1000 + ord( substr( $str, 1, 1 ) );
+		if ( 176161 <= $asc && $asc < 176197 )
+		{
+				return "A";
+		}
+		if ( 176197 <= $asc && $asc < 178193 )
+		{
+				return "B";
+		}
+		if ( 178193 <= $asc && $asc < 180238 )
+		{
+				return "C";
+		}
+		if ( 180238 <= $asc && $asc < 182234 )
+		{
+				return "D";
+		}
+		if ( 182234 <= $asc && $asc < 183162 )
+		{
+				return "E";
+		}
+		if ( 183162 <= $asc && $asc < 184193 )
+		{
+				return "F";
+		}
+		if ( 184193 <= $asc && $asc < 185254 )
+		{
+				return "G";
+		}
+		if ( 185254 <= $asc && $asc < 187247 )
+		{
+				return "H";
+		}
+		if ( 187247 <= $asc && $asc < 191166 )
+		{
+				return "J";
+		}
+		if ( 191166 <= $asc && $asc < 192172 )
+		{
+				return "K";
+		}
+		if ( 192172 <= $asc && $asc < 194232 )
+		{
+				return "L";
+		}
+		if ( 194232 <= $asc && $asc < 196195 )
+		{
+				return "M";
+		}
+		if ( 196195 <= $asc && $asc < 197182 )
+		{
+				return "N";
+		}
+		if ( 197182 <= $asc && $asc < 197190 )
+		{
+				return "O";
+		}
+		if ( 197190 <= $asc && $asc < 198218 )
+		{
+				return "P";
+		}
+		if ( 198218 <= $asc && $asc < 200187 )
+		{
+				return "Q";
+		}
+		if ( 200187 <= $asc && $asc < 200246 )
+		{
+				return "R";
+		}
+		if ( 200246 <= $asc && $asc < 203250 )
+		{
+				return "S";
+		}
+		if ( 203250 <= $asc && $asc < 205218 )
+		{
+				return "T";
+		}
+		if ( 205218 <= $asc && $asc < 206244 )
+		{
+				return "W";
+		}
+		if ( 206244 <= $asc && $asc < 209185 )
+		{
+				return "X";
+		}
+		if ( 209185 <= $asc && $asc < 212209 )
+		{
+				return "Y";
+		}
+		if ( 212209 <= $asc )
+		{
+				return "Z";
+		}
+		return "1";
+}
+
+function getstr( $string, $length, $in_slashes = 0, $out_slashes = 0, $bbcode = 0, $html = 0 )
+{
+		global $_G;
+		$string = trim( $string );
+		if ( $in_slashes )
+		{
+				$string = dstripslashes( $string );
+		}
+		if ( $html < 0 )
+		{
+				$string = preg_replace( "/(\\<[^\\<]*\\>|\r|\n|\\s|\\[.+?\\])/is", " ", $string );
+		}
+		else if ( $html == 0 )
+		{
+				$string = dhtmlspecialchars( $string );
+		}
+		if ( $length )
+		{
+				$string = cutstr( $string, $length );
+		}
+		if ( $bbcode )
+		{
+				require_once( DISCUZ_ROOT."./source/class/class_bbcode.php" );
+				$bb =& bbcode::instance( );
+				$string = $bb->bbcode2html( $string, $bbcode );
+		}
+		if ( $out_slashes )
+		{
+				$string = daddslashes( $string );
+		}
+		return trim( $string );
+}
+function pdupdatecredit( $action, $message='', $url='home.php?mod=spacecp&ac=credit&op=rule')
+{
+		global $_G;
+		$credit = DB::fetch_first("SELECT * FROM " . DB::table("common_member_count") . " WHERE uid=" . $_G['uid']);
+		$credits = DB::fetch_first("SELECT * FROM " . DB::table("common_credit_rule") . " WHERE action='$action'");
+		$creditid = 1;
+		$message = empty($message) ? lang('credit_shortage') : $message;
+		while( $creditid <= 8 )
+		{
+				if( $credits['extcredits'.$creditid] < 0 && ( $credits['extcredits'.$creditid] + $credit['extcredits'.$creditid] ) < 0 )
+				{
+						showmessage( $message, $url);
+				}
+				$creditid++;
+		}
+		updatecreditbyaction( $action , $_G['uid'] );	
+}
+?>

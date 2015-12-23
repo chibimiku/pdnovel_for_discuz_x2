@@ -7,6 +7,12 @@
 /*                   */
 /*********************/
 
+
+
+if(!defined('IN_DISCUZ')){
+		exit( 'Access Denied' );
+}
+
 class adv_pdnovel
 {
 
@@ -73,7 +79,7 @@ class adv_pdnovel
 				}
 		}
 
-		public function setsetting( &$advnew, &$_obfuscate_Zg8Wl64CCWkjSg�� )
+		public function setsetting( &$advnew, &$parameters )
 		{
 				global $_G;
 				if ( is_array( $advnew['targets'] ) )
@@ -91,10 +97,5 @@ class adv_pdnovel
 				return array( 'check' => "\r\n\t\t\t\$checked = \$params[2] == \$parameter['position'] && (!\$parameter['category'] || \$parameter['category'] && in_array(\$_G['catid'], \$parameter['category']));\r\n\t\t\t", 'create' => '$adcode = $codes[$adids[array_rand($adids)]];' );
 		}
 
-}
-
-if ( !defined( 'IN_DISCUZ' ) )
-{
-		exit( 'Access Denied' );
 }
 ?>
