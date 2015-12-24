@@ -1,3 +1,55 @@
-<?php // This file is protected by copyright law & provided under license. Copyright(C) 2012-2020 www.poudu.net,www.chnb.net, All rights reserved.
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=3292;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMjc0KTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ0VudGVyeW91d2toUkhZS05XT1VUQWFCYkNjRGRGZkdnSWlKakxsTW1QcFFxU3NWdlh4WnowMTIzNDU2Nzg5Ky89JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+
+if(!defined('IN_DISCUZ') ||!defined('IN_ADMINCP')) {
+exit('Access Denied');
+}
+shownav( 'pdnovel','setting');
+if ( $do == 'show')
+{
+if ( !submitcheck( 'settingsubmit') )
+{
+showsubmenu( 'setting');
+showformheader( 'pdnovel&operation=setting','enctype');
+showtableheader( );
+$setting = DB::fetch_first( 'SELECT * FROM '.DB::table( 'pdmodule_view')." WHERE name='pdnovel'");
+showtitle( 'setting_status');
+showsetting( 'setting_open','status',$setting['status'],'radio');
+showsetting( 'setting_rewrite','rewrite',$setting['rewrite'],'radio');
+showsetting( 'setting_icollect','icollect',$setting['icollect'],'radio');
+showsetting( 'setting_localimg','localimg',$setting['localimg'],'radio');
+showtitle( 'setting_seo');
+showsetting( 'setting_seo_seotitle','seotitle',$setting['seotitle'],'text');
+showsetting( 'setting_seo_siteurl','siteurl',$_G['setting']['domain']['app']['pdnovel'],'text');
+showsetting( 'setting_seo_seokeywords','seokeywords',$setting['seokeywords'],'text');
+showsetting( 'setting_seo_seodescription','seodescription',$setting['seodescription'],'text');
+showsetting( 'setting_seo_seohead','seohead',$setting['seohead'],'textarea');
+showtablefooter( );
+showsubmit( 'settingsubmit');
+showformfooter( );
+}
+else
+{
+if(preg_match('/^((http|https|ftp):\/\/|\.)|(\/|\.)$/i',$_G['gp_siteurl'])) {
+cpmsg('setting_domain_http_error','','error');
+}
+$_G['setting']['domain']['app']['pdnovel'] = $_G['gp_siteurl'];
+DB::insert('common_setting',array('skey'=>'domain','svalue'=>addslashes(serialize($_G['setting']['domain']))),false,true);
+$_G['gp_seotitle'] = !empty( $_G['gp_seotitle'] ) ?dhtmlspecialchars( trim( $_G['gp_seotitle'] ) ) : '';
+$_G['gp_seokeywords'] = !empty( $_G['gp_seokeywords'] ) ?dhtmlspecialchars( trim( $_G['gp_seokeywords'] ) ) : '';
+$_G['gp_seodescription'] = !empty( $_G['gp_seodescription'] ) ?dhtmlspecialchars( trim( $_G['gp_seodescription'] ) ) : '';
+$_G['gp_seohead'] = !empty( $_G['gp_seohead'] ) ?dhtmlspecialchars( trim( $_G['gp_seohead'] ) ) : '';
+DB::update( 'pdmodule_view',array(
+'status'=>intval( $_G['gp_status'] ),
+'seotitle'=>$_G['gp_seotitle'],
+'seokeywords'=>$_G['gp_seokeywords'],
+'seodescription'=>$_G['gp_seodescription'],
+'seohead'=>$_G['gp_seohead'],
+'rewrite'=>$_G['gp_rewrite'],
+'icollect'=>$_G['gp_icollect'],
+'localimg'=>$_G['gp_localimg']
+),"name='pdnovel'");
+updatecache('setting');
+cpmsg( 'setting_succeed','action=pdnovel&operation=setting','succeed');
+}
+}
+?>

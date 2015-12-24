@@ -1,3 +1,618 @@
-<?php // This file is protected by copyright law & provided under license. Copyright(C) 2012-2020 www.poudu.net,www.chnb.net, All rights reserved.
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=25264;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMjc1KTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ0VudGVyeW91d2toUkhZS05XT1VUQWFCYkNjRGRGZkdnSWlKakxsTW1QcFFxU3NWdlh4WnowMTIzNDU2Nzg5Ky89JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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eWp9eWpzDo93dMy2htEmFoOVd3cldtFSk3nLdM92cBxgC29SdoajftFpKX0hF2ivf2cvFM1PcByLcbwPwtfXco5vfMaSkM9Xcbkifolvdj1jd2xScBY0kMOvNBYvdoxlC3WmhTSYtmYPd3f0CBkScBilCBOlFJIIhTSYtmYPd3f0DbOScUIIk3nLdM92cBxgC29Sdoajfy9VcbFmhTSYtJOxfBaZGUE9wrOtKjpxfBaZGUIIk1YyTraeatnjCbOpctxjCbOVCB1lRuaXDBWScolzFoxiGB9ZcoaZwrcUT00IkZ5rWjP6foyJdoAPwtfXco5vfMaSb2Yifoamd3k5kZLVkZnNALOyAJntBUnLDbYXdoy5d3kLcbwIWaYekZL7eWPLC2y0F2aScBY0we0IwjxzcBxlC3WIdMyscT1FwMYifolLbtw+wjSYtJOVd3cldoYifuHINUniFmkiGUIIhTSYtmfPDBxlwtIIko5vfMaSC2y0we0IOrw6KMclfoYPhtELFbalFmLIhUEpeWp7eWPLdM92cBxjCbOzB10INUELdM92cBxjCbW7eWp9eWppcJEPwolzb2yZFMy5htELdM92cBxjCbOzwtLIhW0hGX0hcM9ZcByjDtEPwtOVd3cldoYifuHICbHIkoYiferIhW0hGX0hDBCIhtEikoYifeydk3aXDBWmbUEpeWp7eWPLF2aScBY0cBWINUELC2y0HaSmC2y0DBWmbUE9NUELC2y0DBWINZkzcBxlC3Olce1FwmYldoajfoaLbtwJKJnKaAxHKX0hkoYifuYldoajftEVNUEJNo9XfolvdJn2CBx1cT1FwJwVkoYifeydk2YifolLk10VhtEJbtwIwJ4LF2aScBY0cBWVwj57koYifeydk2Yifo5idBAmbb08R29Xfolvdj5FdJwpKX0hcM9ZcByjDtEPwtOVd3cldoYifuHICbHIkoYifewIhW0hGX0hDBCIhtELC2y0HlSmfbnpctffwe4XwtEMkJOjCbWZBZf1FolLk10INT0IkoYifeydk2YifolLk10IwtLYtmSYtJOzcBxlC3OlctE9wtOjCbWZBZfjCbOpctffwe09wtOjCbOpctE/wmYldoajfoaLNaXJF2aScBY0cBOFwJw6wr5aTrX7eWPLC2y0F2aScBY0wt49wtw8d3n0DB9VwucidualNaXJ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
+<?php
+
+if(!defined('IN_DISCUZ') ||!defined('IN_ADMINCP')) {
+exit('Access Denied');
+}
+ignore_user_abort(0);
+@set_time_limit(0);
+if ( $do == "show")
+{
+if ( !submitcheck( "collectsubmit") ){
+	@include_once( DISCUZ_ROOT.'./data/attachment/pdnovel/collect/pdnovel_key.php');
+	$checkhost = parse_url($_G['siteurl']);
+	$checkdomain = strtolower(matchdomain($checkhost['host']));
+	$checkstr = substr( md5( $checkdomain.'checkpdkey2you7'),8,16 );
+	$keydomain = array( 'http://huan.poudu.net/pdgetkey.php?mod=pdnovel&domain='.$checkdomain.'&check='.$checkstr ,'http://www.huiwei100.com/pdgetkey.php?mod=pdnovel&domain='.$checkdomain.'&check='.$checkstr,'http://www.cxapp.com/pdgetkey.php?mod=pdnovel&domain='.$checkdomain.'&check='.$checkstr);
+	if( !DOMAIN ||strlen($temp = get_contents($keydomain[DOMAIN])) != 32 ){
+		foreach( $keydomain as $k =>$v){
+			$temp = get_contents($v);
+			if ( strlen( $temp ) == 32 ){
+				$result = @file_put_contents( 'data/attachment/pdnovel/collect/pdnovel_key.php','<?php'."\r\ndefine('PDNOVEL_KEY', '".$temp."');\r\ndefine('DOMAIN','".$k."');\r\n?>");
+			break;
+			}
+		}
+	}
+/*
+if($temp != md5('doItwell'.$checkdomain.'Author:Ludonghai')){
+	cpmsg( 'pdnovel_index_keyerror','action=pdnovel&operation=index','error');
+}
+*/
+shownav( "pdnovel","pdnovel_collect");
+showformheader( "pdnovel&operation=collect");
+showtableheader( );
+showtitle( "pdnovel_collect");
+$optselect = "<select name=\"siteid\">";
+$query = DB::query( "SELECT * FROM ".DB::table( "pdnovel_collect")." WHERE enable=1 ORDER BY displayorder");
+while ( $pdnovelcollect = DB::fetch( $query ) ){
+	$optselect .= "<option value=\"".$pdnovelcollect['siteid']."\">".$pdnovelcollect['sitename']."</option>";
+}
+$optselect .= "</select>";
+showsetting( "pdnovel_collect_fromsite","","",$optselect );
+showsetting( "pdnovel_collect_fromid","fromid","","text");
+showsubmit( "collectsubmit");
+showtablefooter( );
+showformfooter( );
+}
+else
+{
+$siteid = $_G['gp_siteid'];
+include_once( DISCUZ_ROOT."./data/attachment/pdnovel/collect/site_".$siteid.".php");
+if ( $_G['gp_fromid'] )
+{
+$fromid = $_G['gp_fromid'];
+$novel = DB::fetch_first( "SELECT * FROM ".DB::table( "pdnovel_view").( " WHERE siteid=".$siteid.( " AND fromid=".$fromid." LIMIT 1;") ) );
+if ( $novel )
+{
+$novelid = $novel['novelid'];
+$catid = $novel['catid'];
+$name = $novel['name'];
+$cover = $novel['cover'];
+$keyword = $novel['keyword'];
+$intro = $novel['intro'];
+$notice = $novel['notice'];
+$author = $novel['author'];
+$premission = $novel['premission'];
+$first = $novel['first'];
+$full = $novel['full'];
+if ( $full != 1 )
+{
+$url = str_replace( "<{novelid}>",$fromid,$pdnovel['url'] );
+$url = str_replace( "<{subnovelid}>",$subnovelid,$url );
+$source = get_contents( $url );
+if ( $source )
+{
+$full = "";
+$pregstr = $pdnovel['full'];
+if ( !empty( $pregstr ) )
+{
+$matchvar = get_matchone( $pregstr,$source );
+if ( !empty( $matchvar ) )
+{
+$full = $matchvar == $pdnovel['fullnovel'] ?1 : 0;
+}
+}
+DB::update( "pdnovel_view",array(
+"full"=>$full
+),"novelid=".$novelid );
+}
+}
+}
+else
+{
+if ( empty( $pdnovel['name'] ) ||empty( $pdnovel['url'] ) )
+{
+cpmsg( "pdnovel_collect_error","","error");
+}
+$url = str_replace( "<{novelid}>",$fromid,$pdnovel['url'] );
+if ( !empty( $pdnovel['subnovelid'] ) )
+{
+$subnovelid = 0;
+$pdnovel['subnovelid'] = str_replace( "<{novelid}>",$fromid,$pdnovel['subnovelid'] );
+eval( "\$subnovelid = ".$pdnovel['subnovelid'].";");
+$url = str_replace( "<{subnovelid}>",$subnovelid,$url );
+}
+$source = get_contents( $url );
+if ( $source )
+{
+$source = function_extent( 'viewstart',$source );
+$name = "";
+$pregstr = $pdnovel['name'];
+if ( !empty( $pregstr ) )
+{
+$matchvar = get_matchone( $pregstr,$source );
+if ( !empty( $matchvar ) )
+{
+$name = $matchvar;
+}
+}
+$author = "";
+$pregstr = $pdnovel['author'];
+if ( !empty( $pregstr ) )
+{
+$matchvar = get_matchone( $pregstr,$source );
+if ( !empty( $matchvar ) )
+{
+$author = $matchvar;
+}
+}
+$cat = $catid = "";
+$pregstr = $pdnovel['cat'];
+if ( !empty( $pregstr ) )
+{
+$matchvar = get_matchone( $pregstr,$source );
+if ( !empty( $matchvar ) )
+{
+$cat = $matchvar;
+$catid = empty( $pdnovel['catid'][$cat] ) ?$pdnovel['catid']['default'] : $pdnovel['catid'][$cat];
+}
+}
+$checkid = DB::result_first( "SELECT novelid FROM ".DB::table( "pdnovel_view").( " WHERE name='".$name.( "' AND author='".$author."'") ) );
+if ( $checkid )
+{
+cpmsg( cplang( "pdnovel_collect_exist")."<br><br><a href=\"admin.php?action=pdnovel&operation=collect&do=update&novelid=".$novelid."\">".cplang( "pdnovel_collect_next")."</a>","","succeed");
+}
+$cover = "";
+$pregstr = $pdnovel['cover'];
+if ( substr( $pregstr,0,4 ) == "http")
+{
+$cover = str_replace( "<{novelid}>",$fromid,$pregstr );
+if ( !empty( $pdnovel['subnovelid'] ) )
+{
+$cover = str_replace( "<{subnovelid}>",$subnovelid,$cover );
+}
+$pregstr = "";
+}
+if ( !empty( $pregstr ) )
+{
+$matchvar = get_matchone( $pregstr,$source );
+if ( !empty( $matchvar ) )
+{
+$cover = $matchvar;
+}
+}
+if ( !in_array( strrchr( strtolower( $cover ),"."),array( ".gif",".jpg",".jpeg",".bmp",".png") ) )
+{
+$cover = "";
+}
+if ( !empty( $cover ) &&!empty( $pdnovel['coverfilter'] ) )
+{
+$cover = str_ireplace( $pdnovel['coverfilter'],"",$cover );
+}
+if ( substr( $cover,0,4 ) !== "http")
+{
+if ( !empty( $pdnovel['coversite'] ) )
+{
+$cover = $pdnovel['coversite'].$cover;
+}
+else if ( substr( $cover,0,1 ) == "/")
+{
+$matches = array( );
+preg_match( "/https?:\\/\\/[^\\/]+/is",$url,$matches );
+if ( !empty( $matches[0] ) )
+{
+$cover = $matches[0].$cover;
+}
+else
+{
+$cover = $pdnovel['siteurl'].$cover;
+}
+}
+else
+{
+$tmpdir = dirname( $url );
+while ( strpos( $cover,"../") === 0 )
+{
+$tmpdir = dirname( $tmpdir );
+$cover = substr( $cover,3 );
+}
+$cover = $tmpdir."/".$cover;
+}
+}
+if ( strpos( $pdnovel['coverkeycancel'],$cover ) !== FALSE )
+{
+$cover = "";
+}
+$keyword = "";
+$pregstr = $pdnovel['keyword'];
+if ( !empty( $pregstr ) )
+{
+$matchvar = get_matchone( $pregstr,$source );
+if ( !empty( $matchvar ) )
+{
+$keyword = $matchvar;
+}
+}
+$intro = "";
+$pregstr = $pdnovel['intro'];
+if ( !empty( $pregstr ) )
+{
+$matchvar = get_matchone( $pregstr,$source,0 );
+if ( !empty( $matchvar ) )
+{
+$intro = get_txtvar( $matchvar );
+}
+}
+$notice = "";
+$pregstr = $pdnovel['notice'];
+if ( !empty( $pregstr ) )
+{
+$matchvar = get_matchone( $pregstr,$source );
+if ( !empty( $matchvar ) )
+{
+$notice = $matchvar;
+}
+}
+$full = "";
+$pregstr = $pdnovel['full'];
+if ( !empty( $pregstr ) )
+{
+$matchvar = get_matchone( $pregstr,$source );
+if ( !empty( $matchvar ) )
+{
+$full = $matchvar == $pdnovel['fullnovel'] ?1 : 0;
+}
+}
+$permission = $pdnovel['permission'];
+$first = $pdnovel['first'];
+$source = function_extent( 'viewend',$source );
+}
+else
+{
+cpmsg( "pdnovel_collect_infoerror","","error");
+}
+}
+}
+else
+{
+cpmsg( "pdnovel_collect_fromiderror","","error");
+}
+shownav( "pdnovel","pdnovel_collect");
+showformheader( "pdnovel&operation=collect&do=collect");
+showtableheader( );
+showtitle( "pdnovel_collect_new");
+$query = DB::query( "SELECT catid,catname,upid,displayorder FROM ".DB::table( "pdnovel_category")." ORDER BY displayorder ASC");
+$catselect = "<select name=\"catid\">";
+$novelcats = array( );
+while ( $novelcat = DB::fetch( $query ) )
+{
+$novelcats[] = $novelcat;
+}
+if ( is_array( $novelcats ) )
+{
+foreach ( $novelcats as $cat1 )
+{
+if ( !$cat1['upid'] )
+{
+$selected = $cat1['catid'] == $catid ?"selected=\"selected\"": NULL;
+$catselect .= "<option value=\"".$cat1['catid'].( "\" ".$selected.">{$cat1['catname']}</option>\n");
+foreach ( $novelcats as $cat2 )
+{
+if ( $cat2['upid'] >0  &&$cat2['upid'] == $cat1['catid']  )
+{
+$selected = $cat2['catid'] == $catid ?"selected=\"selected\"": NULL;
+$catselect .= "<option value=\"".$cat2['catid'].( "\" ".$selected.">  > {$cat2['catname']}</option>\n");
+}
+}
+}
+}
+}
+$catselect .= "</select>";
+showhiddenfields( array(
+"siteid"=>$_G['gp_siteid'],
+"fromid"=>$_G['gp_fromid'],
+"novelid"=>$novelid
+) );
+showsetting( "pdnovel_collect_catname","","",$catselect );
+showsetting( "pdnovel_collect_name","name",$name,"text");
+showsetting( "pdnovel_collect_initial","initial",get_initial( $name ),"text");
+showsetting( "pdnovel_collect_author","author",$author,"text");
+showsetting( "pdnovel_collect_cover","cover",$cover,"text");
+showsetting( "pdnovel_collect_full","","",show_input( $full,"full") );
+showsetting( "pdnovel_collect_permission","","",show_input( $permission,"permission") );
+showsetting( "pdnovel_collect_first","","",show_input( $first,"first") );
+showsetting( "pdnovel_collect_keyword","keyword",$keyword,"text");
+showsetting( "pdnovel_collect_notice","notice",$notice,"text");
+showsetting( "pdnovel_collect_intro","intro",$intro,"textarea");
+showsubmit( "collectsubmit");
+}
+}
+else if ( $do == "collect")
+{
+if ( $_G['gp_novelid'] )
+{
+$novel_data = array(
+"catid"=>$_G['gp_catid'],
+"name"=>addslashes( $_G['gp_name'] ),
+"initial"=>$_G['gp_initial'],
+"lastupdate"=>$_G['timestamp'],
+"keyword"=>addslashes( $_G['gp_keyword'] ),
+"notice"=>addslashes( $_G['gp_notice'] ),
+"cover"=>$_G['gp_cover'],
+"full"=>$_G['gp_full'],
+"permission"=>$_G['gp_permission'],
+"first"=>$_G['gp_first'],
+"intro"=>addslashes( $_G['gp_intro'] )
+);
+$novelid = $_G['gp_novelid'];
+DB::update( "pdnovel_view",$novel_data,"novelid=".$novelid." LIMIT 1");
+}
+else
+{
+$author = addslashes( $_G['gp_author'] );
+$authorid = DB::result_first( "SELECT authorid FROM ".DB::table( "pdnovel_author").( " WHERE author='".$author."';") );
+if ( !$authorid )
+{
+DB::insert( "pdnovel_author",array(
+"author"=>$author
+) );
+$authorid = DB::insert_id( );
+}
+$novel_data = array(
+"catid"=>$_G['gp_catid'],
+"name"=>addslashes( $_G['gp_name'] ),
+"initial"=>$_G['gp_initial'],
+"postdate"=>$_G['timestamp'],
+"lastupdate"=>$_G['timestamp'],
+"keyword"=>addslashes( $_G['gp_keyword'] ),
+"notice"=>addslashes( $_G['gp_notice'] ),
+"author"=>$author,
+"authorid"=>$authorid,
+"poster"=>$_G['username'],
+"posterid"=>$_G['uid'],
+"admin"=>$_G['username'],
+"adminid"=>$_G['uid'],
+"cover"=>'',
+"full"=>$_G['gp_full'],
+"permission"=>$_G['gp_permission'],
+"first"=>$_G['gp_first'],
+"intro"=>addslashes( $_G['gp_intro'] ),
+"type"=>1,
+"siteid"=>$_G['gp_siteid'],
+"fromid"=>$_G['gp_fromid']
+);
+DB::insert( "pdnovel_view",$novel_data );
+$novelid = DB::insert_id( );
+$subnovelid = floor( $novelid / 1000 );
+$coverpath = DISCUZ_ROOT."./data/attachment/pdnovel/cover/";
+dmkdir( $coverpath.$subnovelid );
+$cover = $_G['gp_cover'];
+if ( !empty( $cover ) )
+{
+$covercontent = get_contents( $cover,'',1 );
+if ( !empty( $covercontent ) )
+{
+$coversave = $subnovelid."/".$novelid."-".rand( 100,999 ).".jpg";
+@file_put_contents( $coverpath.$coversave,$covercontent );
+DB::update( "pdnovel_view",array(
+"cover"=>$coversave
+),"novelid=".$novelid." LIMIT 1");
+}
+}
+}
+cpmsg( cplang( "pdnovel_collect_infosuccess")."<br><br><a href=\"admin.php?action=pdnovel&operation=collect&do=update&novelid=".$novelid."\">".cplang( "pdnovel_collect_next")."</a>","","succeed");
+}
+else if ( $do == "update")
+{
+echo "\r\n<script>\r\nvar thisurl = document.URL;\r\n</script>\r\n";
+$pdmodule = DB::fetch_first( "select * from ".DB::table( "pdmodule_view") );
+$novelid = $_G['gp_novelid'];
+$novel = DB::fetch_first( "SELECT * FROM ".DB::table( "pdnovel_view").( " WHERE novelid=".$novelid.";") );
+$fromid = $novel['fromid'];
+$siteid = $novel['siteid'];
+include_once( DISCUZ_ROOT."./data/attachment/pdnovel/collect/site_".$siteid.".php");
+$chapterpath = DISCUZ_ROOT."./data/attachment/pdnovel/chapter/";
+$name = $novel['name'];
+$chapters = $novel['chapters'];
+$volumeorder = $novel['volumes'];
+ob_end_flush( );
+$time = $_G['timestamp'];
+echo "<h3>".cplang( "discuz_message")."</h3><style type=\"text/css\">p{background:#F2F9FD;line-height:22px;padding-left:20px;}.ptop{border-top:4px solid #DEEFFA;}.pbottom{border-bottom:4px solid #DEEEFA;}.ptext{line-height:30px;color:#009900;font-size:14px;font-weight:700;}</style>";
+$url = str_replace( "<{novelid}>",$fromid,$pdnovel['chapterurl'] );
+if ( !empty( $pdnovel['subnovelid'] ) )
+{
+$subnovelid = 0;
+$pdnovel['subnovelid'] = str_replace( "<{novelid}>",$fromid,$pdnovel['subnovelid'] );
+eval( "\$subnovelid = ".$pdnovel['subnovelid'].";");
+$url = str_replace( "<{subnovelid}>",$subnovelid,$url );
+}
+$source = get_contents( $url );
+$source = function_extent( 'liststart',$source );
+if ( $novel['lcid'] )
+{
+$pregstr = str_replace( "<{lastid}>",$novel['lcid'],$pdnovel['lastchapter'] );
+$source = get_matchone( $pregstr,$source,0 );
+}
+echo '<script type="text/javascript" src="static/js/pdnovelcp.js"></script>';
+if ( $source )
+{
+$chapterary = array( );
+$pregstr = $pdnovel['chapter'];
+$matchvar = get_matchall( $pregstr,$source );
+if ( $matchvar )
+{
+if ( is_array( $matchvar ) )
+{
+$chapterary = $matchvar;
+}
+$chapteridary = array( );
+$pregstr = $pdnovel['chapterid'];
+$matchvar = get_matchall( $pregstr,$source );
+if ( is_array( $matchvar ) )
+{
+$chapteridary = $matchvar;
+}
+$volumeary = array( );
+$pregstr = $pdnovel['volume'];
+$matchvar = get_matchall( $pregstr,$source );
+if ( is_array( $matchvar ) )
+{
+$volumeary = $matchvar;
+}
+else
+{
+if ( !$novel['lastchapterid'] )
+{
+$volumeary[] = array( 0 =>"&Otilde;&yacute;&Icirc;&Auml;",1 =>0 );
+}
+}
+if ( !$novel['lastchapterid'] &&$chapterary[0][1] <$volumeary[0][1] )
+{
+$volumeary = array_merge( array(array( 0 =>"&Otilde;&yacute;&Icirc;&Auml;",1 =>0 )),$volumeary);
+}
+}
+else
+{
+cpmsg( "pdnovel_collect_chaptererror","","error");
+}
+}
+$fromrows = array( );
+$i = 0;
+$j = 0;
+$k = 0;
+$chapternum = count( $chapterary );
+$volumenum = count( $volumeary );
+$allnum = $chapternum +$volumenum;
+echo cplang( "pdnovel_collect_leftname").$name.cplang( "pdnovel_collect_allchapter").$allnum.cplang( "pdnovel_collect_chapters");
+ob_flush( );
+flush( );
+while ( $j <$chapternum )
+{
+++$i;
+if ( $j <$chapternum )
+{
+$a = $chapterary[$j][1];
+}
+else
+{
+$a = 99999999;
+}
+if ( $k <$volumenum )
+{
+$b = $volumeary[$k][1];
+}
+else
+{
+$b = 99999999;
+}
+if ( $a <$b )
+{
+$tmpvar = trim( $chapterary[$j][0] );
+if ( $tmpvar != "")
+{
+$chaptername = addslashes( $tmpvar );
+$url = str_replace( "<{novelid}>",$fromid,$pdnovel['readurl'] );
+$url = str_replace( "<{chapterid}>",$chapteridary[$j][0],$url );
+if ( !empty( $pdnovel['subnovelid'] ) )
+{
+$url = str_replace( "<{subnovelid}>",$subnovelid,$url );
+}
+if ( !empty( $pdnovel['subchapterid'] ) )
+{
+$subchapterid = 0;
+$chapterid = $chapteridary[$j][0];
+$tmpstr = "\$subchapterid = ".$pdnovel['subchapterid'].";";
+eval( $tmpstr );
+$url = str_replace( "<{subchapterid}>",$subchapterid,$url );
+}
+$filetype = strtolower( strrchr( $url,".") );
+$content = get_contents( $url );
+$content = function_extent( 'readstart',$content );
+$pregstr = $pdnovel['content'];
+$content = get_matchone( $pregstr,$content,0 );
+if ( !empty( $pdnovel['replace'] ) )
+{
+$content = str_replace( $pdnovel['replace'],$pdnovel['contentfile'],$content );
+}
+if ( !empty( $pdnovel['pregreplace'] ) )
+{
+$content = preg_replace( $pdnovel['pregreplace'],$pdnovel['pregcontentfilter'],$content );
+}
+$lastchaptercontent = addslashes( cutstr( strip_tags( get_txtvar( $content ) ),600 ) );
+$chapterwords = ceil( strlen( $content ) / 2 );
+if ( !$startvolume )
+{
+$start = DB::fetch_first( "SELECT volumeid,chapterorder FROM ".DB::table( "pdnovel_chapter").( " WHERE chapterid=".$novel['lastchapterid'] ) );
+$volumeid = $start['volumeid'];
+$chapterorder = $start['chapterorder'];
+}
+$chapterorder += 1;
+$chapter_data = array(
+"novelid"=>$novelid,
+"volumeid"=>$volumeid,
+"poster"=>$_G['username'],
+"posterid"=>$_G['uid'],
+"postdate"=>$time,
+"lastupdate"=>$time,
+"chaptername"=>$chaptername,
+"chapterorder"=>$chapterorder,
+"chapterwords"=>$chapterwords
+);
+DB::insert( "pdnovel_chapter",$chapter_data );
+$chapterid = DB::insert_id( );
+$content = function_extent( 'imgstart',$content );
+if ( $pdmodule['icollect'] == 1 )
+{
+$content = get_img( $content,$url );
+}
+if ( $pdmodule['localimg'] == 1 )
+{
+$imgay = get_matchall( "[img]*[/img][m]U",$content );
+foreach ( $imgay as $ik =>$var )
+{
+DB::insert( "pdnovel_image",array(
+"novelid"=>$novelid,
+"chapterid"=>$chapterid
+) );
+$imgid = DB::insert_id( );
+$subimgid = floor( $imgid / 1000 );
+$subsubimgid = floor( $subimgid / 1000 );
+$imgpath = "data/attachment/pdnovel/img/".$novelid."/".$subsubimgid."/".$subimgid."/".$imgid.".jpg";
+dmkdir( dirname( $imgpath ) );
+$data = get_contents( $var[0] ,'',1 );
+file_put_contents( $imgpath ,$data );
+$content = str_replace( "[img]".$var[0]."[/img]","[img]".$imgpath."[/img]",$content );
+echo '<p>      &Iacute;¨º&sup3;&Eacute;&micro;&Uacute;'.($ik+1).'&cedil;&ouml;&Iacute;&frac14;&AElig;&not;&sup2;&Eacute;&frac14;&macr;</p>';
+ob_flush( );
+flush( );
+}
+}
+$content = get_txtvar( $content );
+$content = get_jsvar( $content );
+$content .= $pdnovel['addcontents'];
+$subchapterid = floor( $chapterid / 1000 );
+$subsubchapterid = floor( $subchapterid / 1000 );
+$content = function_extent( 'writestart',$content );
+dmkdir( $chapterpath.$subsubchapterid."/".$subchapterid );
+$chaptercontent = $subsubchapterid."/".$subchapterid."/".$chapterid."-".rand( 100,999 ).".txt";
+@file_put_contents( $chapterpath.$chaptercontent,$content );
+$lcid = $chapteridary[$j][0];
+DB::update( "pdnovel_chapter",array(
+"chaptercontent"=>$chaptercontent
+),"chapterid=".$chapterid );
+DB::query( "UPDATE ".DB::table( "pdnovel_volume").( " SET volumechapters=volumechapters+1, volumewords=volumewords+".$chapterwords.( " WHERE volumeid=".$volumeid ) ) );
+DB::query( "UPDATE ".DB::table( "pdnovel_view").( " SET chapters=chapters+1, words=words+".$chapterwords.( ", lastupdate=".$time.", lastchapter='{$chaptername}', lastchapterid={$chapterid}, lastchaptercontent='{$lastchaptercontent}', lcid={$lcid} WHERE novelid={$novelid}") ) );
+}
+++$j;
+echo cplang( "pdnovel_collect_doneleft").$i.cplang( "pdnovel_collect_doneright").$novelid."&chapterid=".$chapterid."\" target=\"_blank\">".$chaptername."</a></p>";
+ob_flush( );
+flush( );
+}
+else
+{
+$tmpvar = trim( $volumeary[$k][0] );
+$startvolume = 1;
+if ( $tmpvar != "")
+{
+$volumeorder += 1;
+$volumename = addslashes( $tmpvar );
+$volume_data = array(
+"novelid"=>$novelid,
+"volumename"=>$volumename,
+"volumeorder"=>$volumeorder
+);
+$volumeid = DB::insert( "pdnovel_volume",$volume_data,1 );
+$chapterorder = 0;
+DB::query( "UPDATE ".DB::table( "pdnovel_view").( " SET volumes=volumes+1, lastvolume='".$volumename.( "', lastvolumeid=".$volumeid." WHERE novelid={$novelid}") ) );
+}
+++$k;
+echo cplang( "pdnovel_collect_doneleft").$i.cplang( "pdnovel_collect_doneright").$novelid."&chapterid=".$chapterid."\" target=\"_blank\">".$volumename."</a></p>";
+ob_flush( );
+flush( );
+}
+}
+echo cplang( "pdnovel_collect_alldoneleft").$name.cplang( "pdnovel_collect_alldoneright");
+ob_flush( );
+flush( );
+ob_end_flush( );
+}
+?>

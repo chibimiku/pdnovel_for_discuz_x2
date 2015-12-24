@@ -1,3 +1,164 @@
-<?php // This file is protected by copyright law & provided under license. Copyright(C) 2012-2020 www.poudu.net,www.chnb.net, All rights reserved.
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=9292;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMjc0KTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ0VudGVyeW91d2toUkhZS05XT1VUQWFCYkNjRGRGZkdnSWlKakxsTW1QcFFxU3NWdlh4WnowMTIzNDU2Nzg5Ky89JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+
+if(!defined('IN_DISCUZ') ||!defined('IN_ADMINCP')) {exit('Access Denied');}
+pdnovelcache( 'pdnovelcategory','pdnovel');
+loadcache( 'pdnovelcategory');
+$pdnovelcategory = $_G['cache']['pdnovelcategory'];
+shownav( 'pdnovel','category');
+if ( $do == 'show')
+{
+if ( !submitcheck( 'categorysubmit') )
+{
+showsubmenu( 'category',array(
+array( 'list','pdnovel&operation=category',1 )
+) );
+showformheader( 'pdnovel&operation=category');
+echo "<style>.txt170 .txt{min-width:170px;}</style><div><a href=\"javascript:;\" onclick=\"show_all()\">".cplang( 'show_all')."</a> | <a href=\"javascript:;\" onclick=\"hide_all()\">".cplang( 'hide_all').'</a></div>';
+showtableheader( '',''," style=\"min-width:910px; _width:910px;\"");
+showsubtitle( array( '','category_displayorder','category_name','category_caption','category_keyword','category_summary',' ','category_operation') );
+foreach ( $pdnovelcategory as $key =>$value )
+{
+if ( $value['level'] == 0 )
+{
+echo pdnovelcategoryrow( $key,0,'');
+}
+}
+echo "<tbody><tr><td> </td><td colspan=\"6\"><div><a href=\"###\" onclick=\"addrow(this, 0)\" class=\"addtr\">".cplang( 'category_addcategory').'</a></div></td></tr></tbody>';
+showsubmit( 'categorysubmit');
+showtablefooter( );
+showformfooter( );
+echo "<script type=\"text/Javascript\">\r\nvar rowtypedata = [\r\n[[1,'',''], [1,'<input type=\"text\" class=\"txt\" name=\"neworder[0][]\" value=\"0\" />', 'td25'], [1,'<div class=\"parentboard\"><input type=\"text\" class=\"txt\" name=\"newname[0][]\" value=\"";
+echo $lang['category_newname'];
+echo "\"/></div>'], [1,'<input type=\"text\" class=\"txt\" name=\"newcaption[0][]\" value=\"";
+echo $lang['category_caption'];
+echo "\"/></div>','txt170'], [1,'<input type=\"text\" class=\"txt\" name=\"newkeyword[0][]\" value=\"";
+echo $lang['category_keyword'];
+echo "\"/></div>','txt170'], [1,'<input type=\"text\" class=\"txt\" name=\"newsummary[0][]\" value=\"";
+echo $lang['category_summary'];
+echo "\"/></div>','txt170'], [1,'','']],\r\n[[1,'',''], [1,'<input type=\"text\" class=\"txt\" name=\"neworder[{1}][]\" value=\"0\" />', 'td25'], [1,'<div class=\"board\"><input type=\"text\" class=\"txt\" name=\"newname[{1}][]\" value=\"";
+echo $lang['category_newname'];
+echo "\"/></div>'], [1,'<input type=\"text\" class=\"txt\" name=\"newcaption[{1}][]\" value=\"";
+echo $lang['category_caption'];
+echo "\"/></div>','txt170'], [1,'<input type=\"text\" class=\"txt\" name=\"newkeyword[{1}][]\" value=\"";
+echo $lang['category_keyword'];
+echo "\"/></div>','txt170'], [1,'<input type=\"text\" class=\"txt\" name=\"newsummary[{1}][]\" value=\"";
+echo $lang['category_summary'];
+echo "\"/></div>','txt170'], [1,'','']],\r\n];\r\n</script>";
+}
+else
+{
+if ( is_array( $_G['gp_order'] ) )
+{
+foreach ( $_G['gp_order'] as $catid =>$value )
+{
+DB::update( 'pdnovel_category',array(
+'catname'=>$_G['gp_name'][$catid],
+'caption'=>$_G['gp_caption'][$catid],
+'keyword'=>$_G['gp_keyword'][$catid],
+'description'=>$_G['gp_summary'][$catid],
+'displayorder'=>$_G['gp_order'][$catid]
+),"catid='".$catid."'");
+}
+}
+if ( is_array( $_G['gp_neworder'] ) )
+{
+foreach ( $_G['gp_neworder'] as $upid =>$cats )
+{
+foreach ( $cats as $key =>$value )
+{
+DB::insert( 'pdnovel_category',array(
+'upid'=>$upid,
+'catname'=>$_G['gp_newname'][$upid][$key],
+'caption'=>$_G['gp_newcaption'][$upid][$key],
+'keyword'=>$_G['gp_newkeyword'][$upid][$key],
+'description'=>$_G['gp_newsummary'][$upid][$key],
+'displayorder'=>$_G['gp_neworder'][$upid][$key]
+),1 );
+}
+}
+}
+pdnovelcache( 'pdnovelcategory','pdnovel');
+cpmsg( 'category_update_succeed','action=pdnovel&operation=category','succeed');
+}
+}
+else if ( $do == 'delete')
+{
+$catid = $_GET['catid'];
+if ( !$catid )
+{
+cpmsg( 'category_not_found','','error');
+}
+$upid = $pdnovelcategory[$catid]['upid'];
+if ( $upid == 0 )
+{
+if ( $pdnovelcategory[$catid]['children'] )
+{
+cpmsg( 'category_chlidren_error','action=pdnovel&operation=category','error');
+}
+else
+{
+DB::query( 'DELETE FROM '.DB::table( 'pdnovel_category').( ' WHERE catid = '.$catid.';') );
+pdnovelcache( 'pdnovelcategory','pdnovel');
+cpmsg( 'category_delete_succeed','action=pdnovel&operation=category','succeed');
+}
+}
+else
+{
+$pdnovel_count = DB::result_first( 'SELECT COUNT(*) FROM '.DB::table( 'pdnovel_view').( ' WHERE catid = '.$catid ) );
+if ( $pdnovel_count )
+{
+shownav( 'pdnovel','category');
+showsubmenu( 'category',array(
+array(
+'delete',
+'pdnovel&operation=category&do=delete&catid='.$catid,
+1
+)
+) );
+showformheader( 'pdnovel&operation=category&do=mdelete&catid='.$catid );
+showtableheader( );
+echo "<tr><td colspan=\"2\" class=\"td27\">".cplang( 'delete').$pdnovelcategory[$catid]['catname'].":</td></tr>\r\n\t\t\t\t\t<tr class=\"noborder\">\r\n\t\t\t\t\t\t<td class=\"vtop rowform\">\r\n\t\t\t\t\t\t\t<ul class=\"nofloat\" onmouseover=\"altStyle(this);\">\r\n\t\t\t\t\t\t\t<li class=\"checked\"><input class=\"radio\" type=\"radio\" name=\"pdnovelop\" value=\"move\" checked /> ".cplang( 'category_moveto').'   '.category_showselect( 'toid',$catid )."</li>\r\n\t\t\t\t\t\t\t<li><input class=\"radio\" type=\"radio\" name=\"pdnovelop\" value=\"delete\" /> ".cplang( 'category_delete')."</li>\r\n\t\t\t\t\t\t\t</ul></td>\r\n\t\t\t\t\t\t<td class=\"vtop tips2\"></td>\r\n\t\t\t\t\t</tr>";
+showsubmit( 'deletesubmit');
+showtablefooter( );
+showformfooter( );
+}
+else
+{
+DB::query( 'DELETE FROM '.DB::table( 'pdnovel_category').( ' WHERE catid = '.$catid.';') );
+pdnovelcache( 'pdnovelcategory','pdnovel');
+cpmsg( 'category_delete_succeed','action=pdnovel&operation=category','succeed');
+}
+}
+}
+else if ( $do = 'mdelete')
+{
+$catid = $_G['gp_catid'];
+$pdnovelop = $_G['gp_pdnovelop'];
+if ( $pdnovelop == 'move')
+{
+$toid = $_G['gp_toid'];
+if ( empty( $toid ) )
+{
+cpmsg( 'category_notoid','action=pdnovel&operation=category&do=delete&catid='.$catid,'error');
+}
+DB::query( 'UPDATE '.DB::table( 'pdnovel_view').( ' SET catid = '.$toid." WHERE catid = {$catid};") );
+DB::query( 'DELETE FROM '.DB::table( 'pdnovel_category').( ' WHERE catid = '.$catid.';') );
+pdnovelcache( 'pdnovelcategory','pdnovel');
+cpmsg( 'category_delete_succeed','action=pdnovel&operation=category','succeed');
+}
+else if ( $pdnovelop == 'delete')
+{
+$query = DB::query( 'SELECT novelid FROM '.DB::table( 'pdnovel_view').( ' WHERE catid = '.$catid.';') );
+while ( $pdnovel = DB::fetch( $query ) )
+{
+$pdnovelid = $pdnovel['pdnovelid'];
+DB::query( 'DELETE FROM '.DB::table( 'pdnovel_chapter').( ' WHERE novelid='.$novelid.';') );
+removedir( 'pdnovel/file/'.floor( $pdnovelid / 1000 ).'/'.$pdnovelid );
+DB::query( 'DELETE FROM '.DB::table( 'pdnovel_info').( ' WHERE pdnovelid='.$pdnovelid.';') );
+}
+DB::query( 'DELETE FROM '.DB::table( 'category').( ' WHERE catid = '.$catid.';') );
+pdnovelcache( 'pdnovelcategory','pdnovel');
+cpmsg( 'category_delete_succeed','action=pdnovel&operation=category','succeed');
+}
+}
+?>

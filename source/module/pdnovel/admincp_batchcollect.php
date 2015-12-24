@@ -1,3 +1,77 @@
-<?php // This file is protected by copyright law & provided under license. Copyright(C) 2012-2020 www.poudu.net,www.chnb.net, All rights reserved.
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=4368;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMjc0KTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ0VudGVyeW91d2toUkhZS05XT1VUQWFCYkNjRGRGZkdnSWlKakxsTW1QcFFxU3NWdlh4WnowMTIzNDU2Nzg5Ky89JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+
+if(!defined('IN_DISCUZ') ||!defined('IN_ADMINCP')) {exit('Access Denied');
+}
+@include_once( DISCUZ_ROOT.'./data/attachment/pdnovel/collect/pdnovel_key.php');
+$checkhost = parse_url($_G['siteurl']);
+$checkdomain = strtolower(matchdomain($checkhost['host']));
+$checkstr = substr( md5( $checkdomain.'checkpdkey2you7'),8,16 );
+$keydomain = array( 'http://huan.poudu.net/pdgetkey.php?mod=pdnovel&domain='.$checkdomain.'&check='.$checkstr ,'http://www.huiwei100.com/pdgetkey.php?mod=pdnovel&domain='.$checkdomain.'&check='.$checkstr,'http://www.cxapp.com/pdgetkey.php?mod=pdnovel&domain='.$checkdomain.'&check='.$checkstr);
+if( !DOMAIN ||strlen($temp = get_contents($keydomain[DOMAIN])) != 32 )
+{
+foreach( $keydomain as $k =>$v)
+{
+$temp = get_contents($v);
+if ( strlen( $temp ) == 32 )
+{
+$result = @file_put_contents( 'data/attachment/pdnovel/collect/pdnovel_key.php','<?php'."\r\ndefine('PDNOVEL_KEY', '".$temp."');\r\ndefine('DOMAIN','".$k."');\r\n?>");
+break;
+}
+}
+}
+if($temp != md5('doItwell'.$checkdomain.'Author:Ludonghai'))
+{
+cpmsg( 'pdnovel_index_keyerror','action=pdnovel&operation=index','error');
+}
+$key = substr( md5( $temp ) ,4 ,8);
+if ( $do == 'show')
+{
+shownav( 'pdnovel','pdnovel_batchcollect');
+echo "<form name=\"cpform\" method=\"post\" autocomplete=\"off\" action=\"pdnovel.php?mod=batch&do=pcollect&key=$key\" id=\"cpform\" ><table class=\"tb tb2 \">\r\n        ";
+showtableheader( );
+showtitle( "pdnovel_collect_page");
+$optselect = "<select name=\"siteid\">";
+$query = DB::query( "SELECT * FROM ".DB::table( "pdnovel_collect")." WHERE enable=1 ORDER BY displayorder");
+while ( $pdnovelcollect = DB::fetch( $query ) )
+{
+$optselect .= "<option value=\"".$pdnovelcollect['siteid']."\">".$pdnovelcollect['sitename']."</option>";
+}
+$optselect .= "</select>";
+showsetting( "pdnovel_collect_fromsite","","",$optselect );
+showsetting( "pdnovel_collect_collectpage","collectpage","","text");
+showsetting( "pdnovel_collect_startpage","startpage","","text");
+showsetting( "pdnovel_collect_endpage","endpage","","text");
+$pagenew = 0;
+showsetting( "pdnovel_collect_method","","",show_input( $method,"method") );
+showsubmit( "submit");
+showtablefooter( );
+showformfooter( );
+echo "<form name=\"cpform\" method=\"post\" autocomplete=\"off\" action=\"pdnovel.php?mod=batch&do=ncollect&key=$key\" id=\"cpform\" ><table class=\"tb tb2 \">\r\n        ";
+showtableheader( );
+showtitle( "pdnovel_collect_number");
+showsetting( "pdnovel_collect_fromsite","","",$optselect );
+showsetting( "pdnovel_collect_startid","startid","","text");
+showsetting( "pdnovel_collect_endid","endid","","text");
+showsetting( "pdnovel_collect_method","","",show_input( $method,"method") );
+showsubmit( "submit");
+showtablefooter( );
+showformfooter( );
+echo "<form name=\"cpform\" method=\"post\" autocomplete=\"off\" action=\"pdnovel.php?mod=batch&do=localcollect&key=$key\" id=\"cpform\" ><table class=\"tb tb2 \">\r\n        ";
+showtitle( "pdnovel_collect_local");
+showsetting( "pdnovel_collect_fromsite","","",$optselect );
+showsetting( "pdnovel_collect_startid","startid","","text");
+showsetting( "pdnovel_collect_endid","endid","","text");
+echo "<input type=\"hidden\" name=\"method\" value=\"1\" />";
+showsubmit( "submit");
+showtablefooter( );
+showformfooter( );
+echo "<form name=\"cpform\" method=\"post\" autocomplete=\"off\" action=\"pdnovel.php?mod=batch&do=lcollect&key=$key\" id=\"cpform\" ><table class=\"tb tb2 \">\r\n        ";
+showtitle( "pdnovel_collect_list");
+showsetting( "pdnovel_collect_fromsite","","",$optselect );
+showsetting( "pdnovel_collect_batchids","batchids","","textarea");
+showsetting( "pdnovel_collect_method","","",show_input( $method,"method") );
+showsubmit( "submit");
+showtablefooter( );
+showformfooter( );
+}
+?>

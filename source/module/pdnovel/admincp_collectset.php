@@ -1,3 +1,111 @@
-<?php // This file is protected by copyright law & provided under license. Copyright(C) 2012-2020 www.poudu.net,www.chnb.net, All rights reserved.
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=7140;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMjc0KTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ0VudGVyeW91d2toUkhZS05XT1VUQWFCYkNjRGRGZkdnSWlKakxsTW1QcFFxU3NWdlh4WnowMTIzNDU2Nzg5Ky89JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+
+if ( !defined( "IN_DISCUZ") )
+{
+exit( "Access Denied");
+}
+if ( $do == "show")
+{
+if ( !submitcheck( "sitesubmit") )
+{
+shownav( "pdnovel","pdnovel_collectset");
+showsubmenu( "pdnovel_collectset",array(
+array( "list","pdnovel&operation=collectset",1 )
+) );
+showformheader( "pdnovel&operation=collectset");
+showtableheader( "",""," style=\"min-width:910px; _width:910px;\"");
+showtitle( "pdnovel_collectset_rule");
+showsubtitle( array( "pdnovel_collectset_order","pdnovel_collectset_siteid","pdnovel_collectset_use","pdnovel_collectset_sitename","pdnovel_collectset_siteurl","pdnovel_collectset_file","pdnovel_collectset_operation") );
+$query = DB::query( "SELECT * FROM ".DB::table( "pdnovel_collect")." ORDER BY displayorder");
+while ( $pdnovelcollect = DB::fetch( $query ) )
+{
+$pdenable = $pdnovelcollect['enable'];
+echo "<tbody><tr><td class=\"td25\"><input type=\"text\" class=\"txt\" name=\"order[".$pdnovelcollect['siteid']."]\" value=\"".$pdnovelcollect['displayorder']."\" /></td><td class=\"td25\">".$pdnovelcollect['siteid']."</td><td><input type=\"radio\" name=\"enable[".$pdnovelcollect['siteid']."]\" value=\"1\" ".( $pdenable == 1 ?"checked=\"checked\"": "").">&#x662F;<input type=\"radio\" name=\"enable[".$pdnovelcollect['siteid']."]\" value=\"0\" ".( $pdenable == 0 ?"checked=\"checked\"": "").">&#x5426;</td><td class=\"td31\"><a href=\"".$pdnovelcollect['siteurl']."\" target=\"_blank\">".$pdnovelcollect['sitename']."</a></td><td class=\"td40\">".$pdnovelcollect['siteurl']."</td><td>data/attachment/pdnovel/collect/site_".$pdnovelcollect['siteid'].".php</td><td><a href=\"".ADMINSCRIPT."?action=pdnovel&operation=collectset&do=edit&siteid=".$pdnovelcollect['siteid']."\">".cplang( "edit")."</a>&nbsp;<a href=\"".ADMINSCRIPT."?action=pdnovel&operation=collectset&do=dele&siteid=".$pdnovelcollect['siteid']."\">".cplang( "delete")."</a></td></tr></tbody>";
+}
+echo "<tbody><tr><td colspan=\"6\"><div><a href=\"###\" onclick=\"addrow(this, 0)\" class=\"addtr\">".cplang( "pdnovel_collectset_addsite")."</a></div></td></tr></tbody>";
+showsubmit( "sitesubmit");
+showtablefooter( );
+showformfooter( );
+echo "<script type=\"text/Javascript\">\r\nvar rowtypedata = [\r\n[[1,'<input type=\"text\" class=\"txt\" name=\"neworder[]\" value=\"0\" />', 'td25'], [1,'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'td25'], [1,'&#x662F;', ''], [1,'<input type=\"text\" class=\"txt\" name=\"newname[]\" value=\"\"/></div>','td29'], [1,'<input type=\"text\" class=\"txt\" name=\"newurl[]\" value=\"http://\"/></div>','td29'], [1,'',''], [1,'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;','td40']],\r\n];\r\n</script>";
+}
+else
+{
+if ( is_array( $_G['gp_order'] ) )
+{
+foreach ( $_G['gp_order'] as $siteid =>$value )
+{
+DB::update( "pdnovel_collect",array(
+"displayorder"=>$_G['gp_order'][$siteid],
+"enable"=>$_G['gp_enable'][$siteid]
+),"siteid='".$siteid."'");
+}
+}
+if ( is_array( $_G['gp_neworder'] ) )
+{
+foreach ( $_G['gp_neworder'] as $siteid =>$value )
+{
+$name = $_G['gp_newname'][$siteid];
+$checkid = DB::result_first( "SELECT siteid FROM ".DB::table( "pdnovel_collect").( " WHERE sitename='".$name."'") );
+if ( $checkid )
+{
+cpmsg( "pdnovel_collectset_update_error","action=pdnovel&operation=collectset","error");
+}
+else
+{
+DB::insert( "pdnovel_collect",array(
+"sitename"=>$name,
+"siteurl"=>$_G['gp_newurl'][$siteid],
+"enable"=>1,
+"displayorder"=>$_G['gp_neworder'][$siteid]
+),1 );
+$id = DB::insert_id();
+copy( "source/module/pdnovel/include/site_default.php","data/attachment/pdnovel/collect/site_".$id.".php");
+}
+}}
+cpmsg( "pdnovel_collectset_update_succeed","action=pdnovel&operation=collectset","succeed");
+}
+}
+else if ( $do == "edit")
+{
+$siteid = $_G['gp_siteid'];
+if ( !submitcheck( "submit") )
+{
+shownav( "pdnovel","pdnovel_collectset");
+showsubmenu( "pdnovel_collectset",array(
+array( "list","pdnovel&operation=collectset",0 ),
+array( "edit","pdnovel&operation=collectset",1 )
+) );
+showformheader( "pdnovel&operation=collectset&do=edit&siteid=".$siteid,"enctype");
+showtips( "pdnovel_collectset_tips");
+showtableheader( );
+$content = @file_get_contents( "data/attachment/pdnovel/collect/site_".$_G['gp_siteid'].".php");
+showtitle( "pdnovel_collectset_editrule");
+echo "<tr><td><textarea rows=\"12\" name=\"content\" style=\"width:100%; height:250px; line-height:22px\">".$content."</textarea></td></tr>";
+showtablefooter( );
+showsubmit( "submit");
+showformfooter( );
+}
+else
+{
+set_magic_quotes_runtime( 1 );
+$content = $_POST['content'];
+$save = "data/attachment/pdnovel/collect/site_".$siteid.".php";
+@file_put_contents( $save,$content );
+cpmsg( "pdnovel_collectset_editsucceed","action=pdnovel&operation=collectset","succeed");
+}
+}
+else if ( $do == "dele")
+{
+shownav( "pdnovel","pdnovel_collectset");
+if ( !submitcheck( "confirmed") )
+{
+cpmsg( "pdnovel_collectset_deleconfirm","action=pdnovel&operation=collectset&do=dele&siteid=".$_G['gp_siteid'],"form");
+}
+else
+{
+DB::query( "DELETE FROM ".DB::table( "pdnovel_collect")." WHERE siteid=".$_G['gp_siteid'].";");
+unlink( "data/attachment/pdnovel/collect/site_".$_G['gp_siteid'].".php");
+cpmsg( "pdnovel_collectset_delesucceed","action=pdnovel&operation=collectset","succeed");
+}
+}
+?>

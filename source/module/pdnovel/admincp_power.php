@@ -1,3 +1,48 @@
-<?php // This file is protected by copyright law & provided under license. Copyright(C) 2012-2020 www.poudu.net,www.chnb.net, All rights reserved.
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=1744;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMjc0KTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ0VudGVyeW91d2toUkhZS05XT1VUQWFCYkNjRGRGZkdnSWlKakxsTW1QcFFxU3NWdlh4WnowMTIzNDU2Nzg5Ky89JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+
+if(!defined('IN_DISCUZ') ||!defined('IN_ADMINCP')) {
+exit('Access Denied');
+}
+shownav( 'pdnovel','power');
+if ( !submitcheck( 'powersubmit') )
+{
+showsubmenu( 'power');
+showformheader( 'pdnovel&operation=power');
+showtableheader( );
+$query = DB::query( 'SELECT groupid, grouptitle FROM '.DB::table( 'common_usergroup').' ORDER BY groupid');
+while ( $ugroup = DB::fetch( $query ) )
+{
+$ugrouparr[] = array(
+$ugroup['groupid'],
+$ugroup['grouptitle'],
+'1'
+);
+}
+$query = DB::query( 'SELECT * FROM '.DB::table( 'pdmodule_power').' WHERE moduleid = 11');
+while ( $power = DB::fetch( $query ) )
+{
+$power['power'] = $power['power'] ?unserialize( $power['power'] ) : array( );
+$powerarr = array(
+'power['.$power['action'].']',
+$ugrouparr,
+'isfloat'
+);
+showtitle( $power['name'] );
+showsetting( '',$powerarr,$power['power'],'omcheckbox');
+}
+showtablefooter( );
+showsubmit( 'powersubmit');
+showformfooter( );
+}
+else
+{
+$query = DB::query( 'SELECT * FROM '.DB::table( 'pdmodule_power').' WHERE moduleid = 11');
+while ( $power = DB::fetch( $query ) )
+{
+DB::update( 'pdmodule_power',array(
+'power'=>serialize( $_G['gp_power'][$power['action']] )
+),"action='".$power['action'] ."'");
+}
+cpmsg( 'threadtype_infotypes_option_succeed','action=pdnovel&operation=power','succeed');
+}
+?>

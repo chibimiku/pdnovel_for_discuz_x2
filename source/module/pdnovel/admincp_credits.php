@@ -1,3 +1,197 @@
-<?php // This file is protected by copyright law & provided under license. Copyright(C) 2012-2020 www.poudu.net,www.chnb.net, All rights reserved.
-$OOO0O0O00=__FILE__;$OOO000000=urldecode('%74%68%36%73%62%65%68%71%6c%61%34%63%6f%5f%73%61%64%66%70%6e%72');$OO00O0000=7604;$OOO0000O0=$OOO000000{4}.$OOO000000{9}.$OOO000000{3}.$OOO000000{5};$OOO0000O0.=$OOO000000{2}.$OOO000000{10}.$OOO000000{13}.$OOO000000{16};$OOO0000O0.=$OOO0000O0{3}.$OOO000000{11}.$OOO000000{12}.$OOO0000O0{7}.$OOO000000{5};$O0O0000O0='OOO0000O0';eval(($$O0O0000O0('JE9PME9PMDAwMD0kT09PMDAwMDAwezE3fS4kT09PMDAwMDAwezEyfS4kT09PMDAwMDAwezE4fS4kT09PMDAwMDAwezV9LiRPT08wMDAwMDB7MTl9O2lmKCEwKSRPMDAwTzBPMDA9JE9PME9PMDAwMCgkT09PME8wTzAwLCdyYicpOyRPTzBPTzAwME89JE9PTzAwMDAwMHsxN30uJE9PTzAwMDAwMHsyMH0uJE9PTzAwMDAwMHs1fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7MTZ9OyRPTzBPTzAwTzA9JE9PTzAwMDAwMHsxNH0uJE9PTzAwMDAwMHswfS4kT09PMDAwMDAwezIwfS4kT09PMDAwMDAwezB9LiRPT08wMDAwMDB7MjB9OyRPTzBPTzAwME8oJE8wMDBPME8wMCwxMjc0KTskT08wME8wME8wPSgkT09PMDAwME8wKCRPTzBPTzAwTzAoJE9PME9PMDAwTygkTzAwME8wTzAwLDM4MCksJ0VudGVyeW91d2toUkhZS05XT1VUQWFCYkNjRGRGZkdnSWlKakxsTW1QcFFxU3NWdlh4WnowMTIzNDU2Nzg5Ky89JywnQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkrLycpKSk7ZXZhbCgkT08wME8wME8wKTs=')));return;?>
-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
+<?php
+
+if(!defined('IN_DISCUZ') ||!defined('IN_ADMINCP')) {exit('Access Denied');
+}
+if ( $do == 'show')
+{
+$rules = array( );
+$query = DB::query( 'SELECT * FROM '.DB::table( 'common_credit_rule')." WHERE action LIKE 'pdnovel%';");
+while ( $value = DB::fetch( $query ) )
+{
+$rules[$value['rid']] = $value;
+}
+if ( !submitcheck( 'rulesubmit') )
+{
+$lowerlimit = array(
+'rid'=>0,
+'rulename'=>$lang['credits_edit_lowerlimit']
+);
+showsubmenu( 'setting_credits');
+showformheader( 'pdnovel&operation=credits');
+showtableheader( 'setting_credits_policy','nobottom');
+echo "<tr><th class=\"td28 nowrap\">".$lang['setting_credits_policy_name']."</th><th class=\"td28 nowrap\">".$lang['setting_credits_policy_cycletype']."</th><th class=\"td28 nowrap\">".$lang['setting_credits_policy_rewardnum'].'</th>';
+$i = 1;
+for ( ;$i <= 8;++$i	)
+{
+if ( $_G['setting']['extcredits'][$i] )
+{
+echo "<th class=\"td25\" id=\"policy".$i."\" ".( $_G['setting']['extcredits'][$i] ?'': 'disabled')." valign=\"top\">".$_G['setting']['extcredits'][$i]['title'].'</th>';
+}
+$lowerlimit['extcredits'.$i] = $_G['setting']['creditspolicy']['lowerlimit'][$i];
+}
+echo "<th class=\"td25\"> </th></tr>";
+foreach ( $rules as $rid =>$rule )
+{
+$tdarr = array(
+$rule['rulename'],
+$rule['rid'] ?$lang['setting_credits_policy_cycletype_'.$rule['cycletype']] : 'N/A',
+$rule['rid'] &&$rule['cycletype'] ?$rule['rewardnum'] : 'N/A'
+);
+$i = 1;
+for ( ;$i <= 8;++$i	)
+{
+if ( $_G['setting']['extcredits'][$i] )
+{
+array_push( &$tdarr,"<input name=\"credit[".$rule['rid'].']['.$i."]\" class=\"txt\" value=\"".$rule['extcredits'.$i]."\" />");
+}
+}
+$opstr = "<a href=\"".ADMINSCRIPT.'?action=pdnovel&operation=credits&do=edit&rid='.$rule['rid']."\" title=\"\" class=\"act\">".$lang['edit'].'</a>';
+array_push( &$tdarr,$opstr );
+showtablerow( '',array_fill( 0,count( $_G['setting']['extcredits'] ) +4,"class=\"td25\""),$tdarr );
+}
+showtablerow( '',"class=\"lineheight\" colspan=\"9\"",$lang['setting_credits_policy_comment'] );
+showsubmit( 'rulesubmit');
+showtablefooter( );
+showformfooter( );
+}
+else
+{
+foreach ( $_G['gp_credit'] as $rid =>$credits )
+{
+$rule = array( );
+$i = 1;
+for ( ;$i <= 8;++$i	)
+{
+if ( $_G['setting']['extcredits'][$i] )
+{
+$rule['extcredits'.$i] = $credits[$i];
+}
+}
+DB::update( 'common_credit_rule',$rule,array(
+'rid'=>$rid
+) );
+}
+$lowerlimit['creditspolicy']['lowerlimit'] = array( );
+$i = 1;
+for ( ;$i <= 8;++$i	)
+{
+if ( $_G['setting']['extcredits'][$i] )
+{
+$lowerlimit['creditspolicy']['lowerlimit'][$i] = ( double )$_G['gp_credit'][0][$i];
+}
+}
+$setting = array(
+'skey'=>'creditspolicy',
+'svalue'=>addslashes( serialize( $lowerlimit['creditspolicy'] ) )
+);
+DB::insert( 'common_setting',$setting,0,TRUE );
+updatecache( array( 'setting','creditrule') );
+cpmsg( 'credits_update_succeed','action=pdnovel&operation=credits&do=show','succeed');
+}
+}
+else if ( $do == 'edit')
+{
+$rid = intval( $_G['gp_rid'] );
+$query = DB::query( 'SELECT * FROM '.DB::table( 'common_credit_rule').( " WHERE rid='".$rid."'") );
+$globalrule = $ruleinfo = DB::fetch( $query );
+if ( !submitcheck( 'rulesubmit') )
+{
+shownav( 'global','credits_edit');
+showsubmenu( "{$lang['credits_edit']} - {$ruleinfo['rulename']}");
+showformheader( 'pdnovel&operation=credits&do=edit&rid='.$rid );
+showtableheader( '','nobottom',"id=\"edit\"");
+if ( $rid )
+{
+showsetting( 'setting_credits_policy_cycletype',array(
+'rule[cycletype]',
+array(
+array(
+0,
+$lang['setting_credits_policy_cycletype_0'],
+array( 'cycletimetd'=>'none','rewardnumtd'=>'none')
+),
+array(
+1,
+$lang['setting_credits_policy_cycletype_1'],
+array( 'cycletimetd'=>'none','rewardnumtd'=>'')
+),
+array(
+2,
+$lang['setting_credits_policy_cycletype_2'],
+array( 'cycletimetd'=>'','rewardnumtd'=>'')
+),
+array(
+3,
+$lang['setting_credits_policy_cycletype_3'],
+array( 'cycletimetd'=>'','rewardnumtd'=>'')
+),
+array(
+4,
+$lang['setting_credits_policy_cycletype_4'],
+array( 'cycletimetd'=>'none','rewardnumtd'=>'')
+)
+)
+),$ruleinfo['cycletype'],'mradio');
+showtagheader( 'tbody','cycletimetd',in_array( $ruleinfo['cycletype'],array( 2,3 ) ),'sub');
+showsetting( 'credits_edit_cycletime','rule[cycletime]',$ruleinfo['cycletime'],'text');
+showtagfooter( 'tbody');
+showtagheader( 'tbody','rewardnumtd',in_array( $ruleinfo['cycletype'],array( 1,2,3,4 ) ),'sub');
+showsetting( 'credits_edit_rewardnum','rule[rewardnum]',$ruleinfo['rewardnum'],'text');
+showtagfooter( 'tbody');
+}
+$i = 1;
+for ( ;$i <= 8;++$i	)
+{
+if ( $_G['setting']['extcredits'][$i] )
+{
+if ( $rid )
+{
+showsetting( 'extcredits'.$i.'('.$_G['setting']['extcredits'][$i]['title'].')','rule[extcredits'.$i.']',$ruleinfo['extcredits'.$i],'text','',0,$fid ?'('.$lang['credits_edit_globalrule'].':'.$globalrule['extcredits'.$i].')': '');
+}
+else
+{
+showsetting( 'extcredits'.$i.'('.$_G['setting']['extcredits'][$i]['title'].')','rule[extcredits'.$i.']',$_G['setting']['creditspolicy']['lowerlimit'][$i],'text');
+}
+}
+}
+showsubmit( 'rulesubmit');
+showtablefooter( );
+showformfooter( );
+}
+else
+{
+$rid = $_G['gp_rid'];
+$rule = $_G['gp_rule'];
+if ( $rid )
+{
+if ( !$rule['cycletype'] )
+{
+$rule['cycletime'] = 0;
+$rule['rewardnum'] = 1;
+}
+$havecredit = FALSE;
+$i = 1;
+for ( ;$i <= 8;++$i	)
+{
+if ( !$_G['setting']['extcredits'][$i] )
+{
+$rule['extcredits'.$i] = 0;
+}
+else if ( !$fid &&!is_numeric( $rule['extcredits'.$i] ) )
+{
+$havecredit = TRUE;
+}
+}
+foreach ( $rule as $key =>$val )
+{
+$rule[$key] = ( double )$val;
+}
+DB::update( 'common_credit_rule',$rule,array(
+'rid'=>$rid
+) );
+updatecache( 'creditrule');
+}
+cpmsg( 'credits_update_succeed','action=pdnovel&operation=credits&do=show','succeed');
+}
+}
+?>
