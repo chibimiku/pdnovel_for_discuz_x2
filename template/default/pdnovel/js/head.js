@@ -19,17 +19,6 @@ function pdinitSearchmenu(searchform) {
 		}
 	};
 	var o = $(searchform + '_type');
-	var a = $(searchform + '_type_menu').getElementsByTagName('a');
-	for(var i=0; i<a.length; i++){
-		if(a[i].className == 'curtype'){
-			o.innerHTML = a[i].innerHTML;
-			$(searchform + '_mod').value = a[i].rel;
-		}
-		a[i].onclick = function(){
-			o.innerHTML = this.innerHTML;
-			$(searchform + '_mod').value = this.rel;
-		};
-	}
 
 }
 function errorcover(v) {

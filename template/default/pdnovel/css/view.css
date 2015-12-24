@@ -1,5 +1,5 @@
 /*定义最基本的样式*/
-.pdbox {margin:8px auto 0; width:960px; background-color:#FFFFFF; font-size:12px; font-family:"宋体",Arial; line-height:normal; text-align:left;}
+.pdbox {margin:8px auto 0; width:940px; background-color:#FFFFFF; font-size:12px; font-family:"宋体",Arial; line-height:normal; text-align:left;}
 .pdbox .temp {margin:0}
 .pdbox .tb-c {padding:0}
 .pdbox .block {margin:0 0 8px;}
@@ -7,7 +7,7 @@
 * html .pdbox {height:1%;}
 .pdbox {clear:both; display:inline-block; display:block;}
 .pdbox:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
-.pdbox a {color:#004d00; text-decoration:none;}
+.pdbox a {color:#00A2E8; text-decoration:none;}
 .pdbox a:hover {color:#c00; text-decoration:none; position:static;}
 .pdbox a.red {color:#FF0000;}
 .pdbox a.red:hover {color:#FF0000;}
@@ -16,8 +16,8 @@
 .pdbox h1, .pdbox h2, .pdbox h3, .pdbox h4, .pdbox h5, .pdbox h6 {font-size:14px;}
 
 /**/
-.pdbox .pdmaincont {float:left; width:762px; overflow:hidden;}
-.pdbox .pdsidecont {float:right; width:190px; overflow:hidden;}
+.pdbox .pdmaincont { overflow:hidden;}
+.pdbox .pdsidecont {float:right; width:180px; overflow:hidden;}
 .pdsidecont .frame-tab .content {padding:2px 8px 0px}
 .pdsidecont .left {float:left}
 .pdsidecont .right {float:right; padding-right:3px; color:#777}
@@ -216,7 +216,7 @@
 .pdbox .pdvaluation .showrate .news_score {color:#ee1515; font-size:14px; font-weight:bold;}
 
 /*章节页*/
-.pdchapter {background:none repeat scroll 0 0 #FAFAFA; display:block; display:inline-block; width:958px; border: 1px solid #CCC;}
+.pdchapter {background:none repeat scroll 0 0 #FAFAFA; display:block; display:inline-block; width:100%; border: 1px solid #CCC;}
 .pdchapter .showhead {padding-top:10px; margin-bottom:8px; text-align:center}
 .pdchapter .showhead .headname {font-size:26px; padding-bottom:5px; color:#DA1A27; font-family:"隶书"; font-weight:400;}
 .pdchapter .showhead .headinfo {border-top:1px dashed #CCCCCC; color:#999999; display:inline-block; margin-top:-1px; padding-top:10px; font-size:12px;}
@@ -231,11 +231,13 @@
 .pdchapter .showbottom { padding: 0 10px; clear:both; height: 31px; border-bottom: 1px solid #FFF; border-left: 1px solid #FFF; border-right: 1px solid #FFF; border-top: 1px solid #c0c0c0; background-color:#f0f0f0; line-height: 31px; color:#004e00;}
 
 /*阅读页*/
+#ts_novel_read_b{float:left}
 .pdread {padding:25px; display:block; display:inline-block; width:908px; border: 1px solid #CCC;}
 .pdread .showhead {padding-bottom:10px; text-align:center}
 .pdread .showhead .headtitle {font-size:26px; padding-bottom:5px; color:#DA1A27; font-family:"隶书"; font-weight:400;}
 .pdread .showhead .headinfo {border-top:1px dashed #CCCCCC; color:#999999; display:inline-block; margin-top:-1px; padding-top:10px; font-size:12px;}
 .pdread .showcontent {line-height:2.4; word-wrap:break-word; padding-bottom:30px;}
+.pdread .showcontent .pdp{text-indent:3%;line-height:300%}
 .pdread .showbottom {font-size:14px; text-align:center}
 .attprice{padding:5px;border:1px dashed #FF9A9A;}
 .zoominner{padding:5px 10px 10px;background:#FFF;text-align:left;}
@@ -281,15 +283,15 @@
 
 /*列表页*/
 .pdlistselect {display:block; display:inline-block; border: 1px solid #CCC;}
-.showselect { width:936px; height:auto; background-color:#f5f5f5;overflow:hidden; padding:10px; line-height:25px; clear:both }
+.showselect { width:920px; height:auto; background-color:#f5f5f5;overflow:hidden; padding:10px; line-height:25px; clear:both }
 .bookstorfont {color:#da1a27}
 .clearfix {display:block;}
 .clearfix:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
 .clearfix {display:inline-block;}
 * html .clearfix {height:1%;}
 #select1bk .selectmz { display:block; width:90px; font-weight:bold; height:25px; display:inline; float:left}
-#select1bk .selectul { width:846px; height:25px; float:left}
-#select1bk .selectul li { display:inline; margin-right:14px; float:left; height:25px; line-height:25px; }
+#select1bk .selectul { height:25px; float:left}
+#select1bk .selectul li { display:inline; margin-right:6px; float:left; height:25px; line-height:25px; }
 #select1bk .licurrent {BORDER-RIGHT: #cccccc 1px solid;BORDER-TOP: #cccccc 1px solid;BORDER-LEFT: #cccccc 1px solid;FONT-WEIGHT: bold;Z-INDEX: 2;COLOR: red;PADDING: 0px 7px;background-color:#FFFFFF; position: relative; display:inline-block;}
 #select1bk .selectxx {border:1px solid #cccccc; background-color:#FFFFFF; padding:3px 0px 3px 15px; width:920px; _margin-top: -1px; margin-bottom:5px}
 #select1bk .selectyy li {margin-right:19px; float:left; height:25px; line-height:25px}
@@ -305,15 +307,15 @@ a.hand,a.hand1{color:Black !important}
 .selectul3 { width:858px; float:left}
 .selectul3 li{display:inline; margin-right:5px; float:left; line-height:25px; }
  /*图文*/
-.storelistbt {width:760px; height:26px; border:1px solid #CCC; border-bottom:0; background:url(../img/bg002.gif) repeat-x 0 -51px ;}
+.storelistbt {height:26px; border:1px solid #CCC; border-bottom:0; background:url(../img/bg002.gif) repeat-x 0 -51px ;}
 .storelistbt1 {float:left; font-weight:bold; padding:5px 0 0 5px;margin-left:4px;}
 .storelistbt1 .img{background:url(../img/list_type_icon1.gif) no-repeat;}
 .storelistbt1 .text{background:url(../img/list_type_icon.gif) no-repeat;margin-left:10px}
 .storelistbt1 a{padding:3px 0 0 20px;}
 .storelistbt2 {float:right; text-align:right; padding:4px;}
 .storelistbt2 label{margin:0 40px 0 0}
-.storelistbt3 {width:760px; border-right:1px solid #CCC; border-left:1px solid #CCC; font-weight:normal; background-color:#faffff }
-.sw { width:760px; height:143px; padding-top:3px; line-height:26px; background:url(../img/jb.gif) repeat-x bottom; white-space:nowrap; word-break:keep-all;overflow:hidden; border-bottom:1px solid #cccccc;}
+.storelistbt3 {border-right:1px solid #CCC; border-left:1px solid #CCC; font-weight:normal; background-color:#faffff }
+.sw {height:143px; padding-top:3px; line-height:26px; background:url(../img/jb.gif) repeat-x bottom; white-space:nowrap; word-break:keep-all;overflow:hidden; border-bottom:1px solid #cccccc;}
 .swc1 { float:left; width:630px; overflow:hidden; white-space:nowrap; word-break:keep-all}
 .swz1 { float:left; width:35px; font-weight:bolder; color:#ffb5f5; margin-top:80px; margin-left:10px; display:inline; font-size:20px; text-aligen:center;overflow:hidden;}
 .storelistbt3 img{float:left; border: #ddd 1px solid; padding:3px; width: 71px; display: block; fload: left; height: 102px; margin-right: 10px; margin-top:10px;}
@@ -353,7 +355,7 @@ a.hand,a.hand1{color:Black !important}
 
 /*频道页*/
 /*频道页左栏小说推荐*/
-.catmainxstj {margin-bottom:8px; clear:both; height:396px}
+.catmainxstj {margin-bottom:8px; clear:both;}
 .catmainxstj .frame {border:none}
 .catmainxstj .frame {margin-bottom:0px}
 .catmainxstj .eyebox {float:left; width:330px; overflow:hidden; position:relative; height:394px;border:1px solid #ccc;}

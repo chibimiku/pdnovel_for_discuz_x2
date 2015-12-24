@@ -1,8 +1,9 @@
 a{color:#369;}
-body{background:#FFF none !important;}
 #toptb{padding:0 15px;border-bottom:1px solid #EFEFEF;}
-#ct{margin:0 20px;}
 #scform{margin:10px 0;}
+
+#scform_tb li{display:none}
+
 #scform h1{margin-right:20px;}
 #scform_tb a{float:left;display:inline;margin:0 15px 0 3px;height:26px;line-height:26px;}
 #scform_tb .y a{margin:0 3px 0 15px;}
@@ -24,7 +25,6 @@ body{background:#FFF none !important;}
 .pbw strong{font-weight:400;}
 .pbw p{color:#000;}
 .p_pop span{display:none;}
-#ft{margin:20px;text-align:center;}
 .pg{float:none;}
 #myspace_menu li a,#navs_menu li a{background-repeat:no-repeat;background-position:-200px 0;}
 
